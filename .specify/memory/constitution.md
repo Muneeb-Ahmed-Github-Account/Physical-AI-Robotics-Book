@@ -1,55 +1,86 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+Version change: N/A (initial version) → 1.0.0
+List of modified principles: N/A (initial creation)
+Added sections: All principles and sections (initial constitution creation)
+Removed sections: None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ Updated "Constitution Check" section to align with new principles
+  - .specify/templates/spec-template.md: ✅ Updated to reflect new scope/requirements alignment
+  - .specify/templates/tasks-template.md: ✅ Updated to reflect new principle-driven task types
+Templates requiring manual updates: None
+Follow-up TODOs: None
+-->
+# Humanoid Robotics Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Technical Accuracy and Validation
+All technical claims in the book must reference reliable sources (research papers, robotics textbooks, ROS docs, IEEE materials). Content must be factually accurate and verifiable through authoritative sources.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Clear, Structured Explanations
+Content must follow a clear structure: overview → theory → examples → applications. All explanations must be accessible to intermediate-to-advanced engineering audiences with consistent terminology and clear progression of concepts.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Source Code Integrity
+All code examples must be tested or logically correct. Code examples must be validated to ensure they function as described and follow best practices for the relevant robotics frameworks and languages.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Modular Writing Architecture
+Content must be modular and aligned with Spec-Kit Plus specifications. Each chapter and section should be independently manageable while maintaining consistency with the overall book structure.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Citation and Reference Standards
+All technical claims must include proper references using a simple numbered citation style. Content must avoid plagiarism by rewriting or reinterpreting all sourced material with appropriate attribution.
 
-### [PRINCIPLE_6_NAME]
+### Docusaurus Multi-Chapter Format
+The book structure must follow the multi-chapter Docusaurus format for consistent presentation and deployment. All content must be compatible with the Docusaurus publishing system.
 
+## Additional Constraints
 
-[PRINCIPLE__DESCRIPTION]
+### Book Structure Requirements
+- Book structure: multi-chapter Docusaurus format
+- Each chapter must follow: overview → theory → examples → applications
+- Maintain auto-updated history tracking by Spec-Kit Plus
+- No plagiarism; rewrite or reinterpret all sourced content
+- Tone: professional, educational, concise
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Technical Standards
+- All technical claims must reference reliable sources (research papers, robotics textbooks, ROS docs, IEEE materials)
+- Citation style: simple numbered references
+- Code examples must be tested or logically correct
+- Diagrams generated as needed (ASCII or external tools)
+- Writing level: Intermediate–advanced engineering audience
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Quality Assurance
+- Chapters generated cleanly and consistently within the spec
+- Accurate robotics explanations with validated references
+- Ready for direct deployment to GitHub Pages
+- Spec-Kit Plus history folder auto-updates correctly
+- Final output meets clarity, technical correctness, and structural standards
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Content Creation Process
+- Each chapter follows the required structure: overview → theory → examples → applications
+- Technical content validated against authoritative sources before inclusion
+- Code examples tested and verified for accuracy
+- Diagrams created to support understanding of complex concepts
+- Writing reviewed for appropriate technical level and clarity
+
+### Review and Quality Gates
+- Technical accuracy verification required for all claims
+- Code example functionality testing mandatory
+- Consistency check for terminology and notation
+- Compliance with citation standards
+- Verification of Docusaurus compatibility
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Process
+This constitution may be amended when significant changes to the project principles or constraints are required. Proposed amendments must be documented with clear rationale and approved by project maintainers before implementation.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Versioning Policy
+Version numbers follow semantic versioning: MAJOR.MINOR.PATCH format where MAJOR versions represent significant principle changes, MINOR versions represent new principles or constraints, and PATCH versions represent clarifications or corrections.
+
+### Compliance Review
+All content and code contributions must comply with the principles and constraints outlined in this constitution. Regular reviews ensure continued adherence to established standards.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08 
