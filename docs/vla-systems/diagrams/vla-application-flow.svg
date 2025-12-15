@@ -1,0 +1,84 @@
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; rx: 10; ry: 10; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+    .process { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 8; ry: 8; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" font-size="20" font-weight="bold">VLA System Application Flow</text>
+
+  <!-- User Input -->
+  <rect x="50" y="80" width="150" height="80" class="node"/>
+  <text x="125" y="110" class="text" font-weight="bold">User Input</text>
+  <text x="125" y="130" class="text">"Bring me the</text>
+  <text x="125" y="150" class="text">red mug"</text>
+
+  <!-- Scene Perception -->
+  <rect x="250" y="80" width="150" height="80" class="process"/>
+  <text x="325" y="110" class="text" font-weight="bold">Scene Perception</text>
+  <text x="325" y="130" class="text">Object Detection</text>
+  <text x="325" y="150" class="text">& Localization</text>
+
+  <!-- Language Processing -->
+  <rect x="450" y="80" width="150" height="80" class="process"/>
+  <text x="525" y="110" class="text" font-weight="bold">Language Processing</text>
+  <text x="525" y="130" class="text">Entity Recognition</text>
+  <text x="525" y="150" class="text">& Intent Parsing</text>
+
+  <!-- Entity Grounding -->
+  <rect x="650" y="80" width="150" height="80" class="process"/>
+  <text x="725" y="110" class="text" font-weight="bold">Entity Grounding</text>
+  <text x="725" y="130" class="text">Match Linguistic</text>
+  <text x="725" y="150" class="text">Entities to Objects</text>
+
+  <!-- Arrows between top row -->
+  <line x1="200" y1="120" x2="250" y2="120" class="arrow"/>
+  <line x1="400" y1="120" x2="450" y2="120" class="arrow"/>
+  <line x1="600" y1="120" x2="650" y2="120" class="arrow"/>
+
+  <!-- Multimodal Fusion -->
+  <rect x="350" y="200" width="200" height="80" class="process"/>
+  <text x="450" y="230" class="text" font-weight="bold">Multimodal Fusion</text>
+  <text x="450" y="250" class="text">Integrate Visual & Linguistic Information</text>
+
+  <!-- Arrow from top row to fusion -->
+  <line x1="325" y1="160" x2="400" y2="200" class="arrow"/>
+  <line x1="525" y1="160" x2="450" y2="200" class="arrow"/>
+
+  <!-- Task Planning -->
+  <rect x="250" y="320" width="150" height="80" class="process"/>
+  <text x="325" y="350" class="text" font-weight="bold">Task Planning</text>
+  <text x="325" y="370" class="text">Navigate → Grasp → Transport</text>
+
+  <!-- Motion Planning -->
+  <rect x="450" y="320" width="150" height="80" class="process"/>
+  <text x="525" y="350" class="text" font-weight="bold">Motion Planning</text>
+  <text x="525" y="370" class="text">Trajectory Generation</text>
+
+  <!-- Arrows from fusion to planning -->
+  <line x1="400" y1="280" x2="325" y2="320" class="arrow"/>
+  <line x1="500" y1="280" x2="475" y2="320" class="arrow"/>
+
+  <!-- Action Execution -->
+  <rect x="350" y="440" width="200" height="80" class="node"/>
+  <text x="450" y="470" class="text" font-weight="bold">Action Execution</text>
+  <text x="450" y="490" class="text">Robot Performs Task</text>
+
+  <!-- Arrows from planning to execution -->
+  <line x1="325" y1="400" x2="400" y2="440" class="arrow"/>
+  <line x1="525" y1="400" x2="500" y2="440" class="arrow"/>
+
+  <!-- Flow Labels -->
+  <text x="100" y="200" class="text" font-style="italic">Natural Language</text>
+  <text x="300" y="200" class="text" font-style="italic">Visual Processing</text>
+  <text x="500" y="200" class="text" font-style="italic">Linguistic Processing</text>
+  <text x="700" y="200" class="text" font-style="italic">Grounding</text>
+</svg>

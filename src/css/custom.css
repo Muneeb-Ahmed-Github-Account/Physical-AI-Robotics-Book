@@ -1,0 +1,118 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* You can override the default Docusaurus styling with custom CSS classes */
+
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+}
+
+/* Custom styling for robotics/education content */
+.robotics-diagram {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.robotics-code-block {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 12px;
+  margin: 16px 0;
+}
+
+.learning-objectives {
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.learning-objectives h3 {
+  margin-top: 0;
+  color: #0369a1;
+}
+
+.exercise-box {
+  background-color: #fefce8;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.exercise-box h3 {
+  margin-top: 0;
+  color: #92400e;
+}
+
+.citation {
+  font-size: 0.85em;
+  color: #6b7280;
+  background-color: #f9fafb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border-left: 2px solid #d1d5db;
+}
+
+/* Custom sidebar styling for course structure */
+.theme-doc-sidebar-menu {
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for educational content */
+@media (min-width: 997px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Special styling for equations and technical content */
+.math-equation {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.1em;
+}
+
+/* Styling for important notes and warnings */
+.important-note {
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.caution-note {
+  border-left: 4px solid #f59e0b;
+  background-color: #fffbeb;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.warning-note {
+  border-left: 4px solid #ef4444;
+  background-color: #fef2f2;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}

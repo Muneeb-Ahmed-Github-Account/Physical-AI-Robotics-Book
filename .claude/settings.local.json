@@ -4,7 +4,12 @@
       "Bash(git --version)",
       "Bash(curl -X POST )",
       "Bash(https://api.github.com/user/repos )",
-      "Bash(git init)"
+      "Bash(git init)",
+      "Bash(node scripts/validate-code-examples.js)",
+      "Bash(node scripts/validate-vla-code-examples.js)",
+      "Bash(node debug-validate.js)",
+      "Bash(del debug-validate.js)",
+      "Bash(npm run build)"
     ],
     "deny": [],
     "ask": []
