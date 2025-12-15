@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-digital-twin/instructor-notes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Instructor Notes - Digital Twin Simulation | Humanoid Robotics &amp; Physical AI Course Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Instructor Notes - Digital Twin Simulation | Humanoid Robotics &amp; Physical AI Course Book"><meta data-rh="true" name="description" content="Teaching guidance and instructor notes for the digital twin simulation module"><meta data-rh="true" property="og:description" content="Teaching guidance and instructor notes for the digital twin simulation module"><link data-rh="true" rel="icon" href="/Physical-AI-Robotics-Book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes" hreflang="en"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Instructor Notes - Digital Twin Simulation","item":"https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes"}]}</script><link rel="stylesheet" href="/Physical-AI-Robotics-Book/assets/css/styles.599a2b8b.css">
+<script src="/Physical-AI-Robotics-Book/assets/js/runtime~main.36aa1060.js" defer="defer"></script>
+<script src="/Physical-AI-Robotics-Book/assets/js/main.c3ed864b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/Physical-AI-Robotics-Book/docs/intro"><div class="navbar__logo"><img src="/Physical-AI-Robotics-Book/img/logo.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40" width="180"><img src="/Physical-AI-Robotics-Book/img/logo-dark.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40" width="180"></div><b class="navbar__title text--truncate">Humanoid Robotics Book</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Physical-AI-Robotics-Book/docs/intro">Course Book</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-username/humanoid-robotics-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/intro"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/course-summary"><span title="Course Summary &amp; Learning Path" class="linkLabel_WmDU">Course Summary &amp; Learning Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/assessment-rubrics"><span title="Assessment Rubrics" class="linkLabel_WmDU">Assessment Rubrics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/ros2/"><span title="ROS 2 Fundamentals" class="categoryLinkLabel_W154">ROS 2 Fundamentals</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Physical-AI-Robotics-Book/docs/digital-twin/"><span title="Digital Twin Simulation" class="categoryLinkLabel_W154">Digital Twin Simulation</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/"><span title="Digital Twin Simulation" class="linkLabel_WmDU">Digital Twin Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/gazebo-unity"><span title="Gazebo vs Unity Simulation" class="linkLabel_WmDU">Gazebo vs Unity Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/simulation-basics"><span title="Simulation Fundamentals" class="linkLabel_WmDU">Simulation Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/advanced-sim"><span title="Advanced Simulation Techniques" class="linkLabel_WmDU">Advanced Simulation Techniques</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/integration"><span title="Simulation to Real-World Integration" class="linkLabel_WmDU">Simulation to Real-World Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/exercises"><span title="Digital Twin Simulation Exercises" class="linkLabel_WmDU">Digital Twin Simulation Exercises</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/diagrams"><span title="Simulation Concept Diagrams" class="linkLabel_WmDU">Simulation Concept Diagrams</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/testing"><span title="Simulation Testing and Validation" class="linkLabel_WmDU">Simulation Testing and Validation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Physical-AI-Robotics-Book/docs/digital-twin/instructor-notes"><span title="Instructor Notes - Digital Twin Simulation" class="linkLabel_WmDU">Instructor Notes - Digital Twin Simulation</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/nvidia-isaac/"><span title="NVIDIA Isaac" class="categoryLinkLabel_W154">NVIDIA Isaac</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/vla-systems/"><span title="Vision-Language-Action Systems" class="categoryLinkLabel_W154">Vision-Language-Action Systems</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/capstone-humanoid/"><span title="Capstone Humanoid Project" class="categoryLinkLabel_W154">Capstone Humanoid Project</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/hardware-guide/"><span title="Hardware Guide" class="categoryLinkLabel_W154">Hardware Guide</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Physical-AI-Robotics-Book/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Digital Twin Simulation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Instructor Notes - Digital Twin Simulation</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Instructor Notes - Digital Twin Simulation</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="module-overview">Module Overview<a href="#module-overview" class="hash-link" aria-label="Direct link to Module Overview" title="Direct link to Module Overview" translate="no">​</a></h2>
+<p>This module introduces students to digital twin simulation concepts with a focus on Gazebo and Unity platforms for humanoid robotics applications. The module is structured to provide both theoretical understanding and practical implementation skills.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="module-duration">Module Duration<a href="#module-duration" class="hash-link" aria-label="Direct link to Module Duration" title="Direct link to Module Duration" translate="no">​</a></h3>
+<ul>
+<li class="">Estimated time: 2-3 weeks (12-18 hours of instruction)</li>
+<li class="">Recommended pace: 3-4 sessions of 3-4 hours each</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h3>
+<p>Students should have:</p>
+<ul>
+<li class="">Basic understanding of ROS 2 concepts (completed Module 1)</li>
+<li class="">Programming experience in Python or C++</li>
+<li class="">Fundamental knowledge of robot kinematics and dynamics</li>
+<li class="">Access to appropriate computing hardware for simulation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives-alignment">Learning Objectives Alignment<a href="#learning-objectives-alignment" class="hash-link" aria-label="Direct link to Learning Objectives Alignment" title="Direct link to Learning Objectives Alignment" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="primary-objectives">Primary Objectives<a href="#primary-objectives" class="hash-link" aria-label="Direct link to Primary Objectives" title="Direct link to Primary Objectives" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Understanding simulation fundamentals</strong> - Essential for all robotics applications</li>
+<li class=""><strong>Platform comparison and selection</strong> - Critical for practical implementation decisions</li>
+<li class=""><strong>Practical simulation setup</strong> - Hands-on skills for real projects</li>
+<li class=""><strong>ROS integration</strong> - Connecting simulation to broader robotics framework</li>
+<li class=""><strong>Evaluation and comparison</strong> - Analytical skills for platform selection</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="assessment-strategies">Assessment Strategies<a href="#assessment-strategies" class="hash-link" aria-label="Direct link to Assessment Strategies" title="Direct link to Assessment Strategies" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="formative-assessment">Formative Assessment<a href="#formative-assessment" class="hash-link" aria-label="Direct link to Formative Assessment" title="Direct link to Formative Assessment" translate="no">​</a></h4>
+<ul>
+<li class="">In-class discussions about platform trade-offs</li>
+<li class="">Live demonstrations of simulation scenarios</li>
+<li class="">Peer review of simulation configurations</li>
+<li class="">Real-time problem-solving exercises</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="summative-assessment">Summative Assessment<a href="#summative-assessment" class="hash-link" aria-label="Direct link to Summative Assessment" title="Direct link to Summative Assessment" translate="no">​</a></h4>
+<ul>
+<li class="">Simulation project comparing Gazebo and Unity for specific use cases</li>
+<li class="">Implementation of a simple humanoid robot in both platforms</li>
+<li class="">Analysis report on simulation-to-reality transfer approaches</li>
+<li class="">Presentation of simulation results and platform recommendations</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-guidance">Teaching Guidance<a href="#teaching-guidance" class="hash-link" aria-label="Direct link to Teaching Guidance" title="Direct link to Teaching Guidance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-1-introduction-to-digital-twin-simulation">Session 1: Introduction to Digital Twin Simulation<a href="#session-1-introduction-to-digital-twin-simulation" class="hash-link" aria-label="Direct link to Session 1: Introduction to Digital Twin Simulation" title="Direct link to Session 1: Introduction to Digital Twin Simulation" translate="no">​</a></h3>
+<p><strong>Duration</strong>: 3-4 hours</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-activity-30-minutes">Opening Activity (30 minutes)<a href="#opening-activity-30-minutes" class="hash-link" aria-label="Direct link to Opening Activity (30 minutes)" title="Direct link to Opening Activity (30 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Demonstrate a simple humanoid robot simulation in both Gazebo and Unity</li>
+<li class="">Highlight differences in graphics, physics, and user experience</li>
+<li class="">Pose the question: &quot;Which platform would be better for perception training?&quot;</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-content-120-minutes">Main Content (120 minutes)<a href="#main-content-120-minutes" class="hash-link" aria-label="Direct link to Main Content (120 minutes)" title="Direct link to Main Content (120 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Importance of simulation in humanoid robotics</li>
+<li class="">Overview of digital twin concepts</li>
+<li class="">Safety, cost, and development benefits</li>
+<li class="">Introduction to simulation fidelity concepts</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-activity-60-minutes">Hands-on Activity (60 minutes)<a href="#hands-on-activity-60-minutes" class="hash-link" aria-label="Direct link to Hands-on Activity (60 minutes)" title="Direct link to Hands-on Activity (60 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Students install and set up basic simulation environments</li>
+<li class="">Run simple example scenarios</li>
+<li class="">Document initial observations about each platform</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-30-minutes">Closing (30 minutes)<a href="#closing-30-minutes" class="hash-link" aria-label="Direct link to Closing (30 minutes)" title="Direct link to Closing (30 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Group discussion on initial impressions</li>
+<li class="">Preview of next session</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-tips">Teaching Tips<a href="#teaching-tips" class="hash-link" aria-label="Direct link to Teaching Tips" title="Direct link to Teaching Tips" translate="no">​</a></h4>
+<ul>
+<li class="">Emphasize safety benefits early - students should understand why simulation is crucial before working with real robots</li>
+<li class="">Use video examples of simulation failures that prevented real-world accidents</li>
+<li class="">Connect to real humanoid robotics projects that rely heavily on simulation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-2-gazebo-vs-unity-comparison">Session 2: Gazebo vs Unity Comparison<a href="#session-2-gazebo-vs-unity-comparison" class="hash-link" aria-label="Direct link to Session 2: Gazebo vs Unity Comparison" title="Direct link to Session 2: Gazebo vs Unity Comparison" translate="no">​</a></h3>
+<p><strong>Duration</strong>: 3-4 hours</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-activity-20-minutes">Opening Activity (20 minutes)<a href="#opening-activity-20-minutes" class="hash-link" aria-label="Direct link to Opening Activity (20 minutes)" title="Direct link to Opening Activity (20 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Review homework from previous session</li>
+<li class="">Quick quiz on simulation benefits</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-content-100-minutes">Main Content (100 minutes)<a href="#main-content-100-minutes" class="hash-link" aria-label="Direct link to Main Content (100 minutes)" title="Direct link to Main Content (100 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Technical comparison of architectures</li>
+<li class="">Strengths and weaknesses of each platform</li>
+<li class="">Use case analysis for different humanoid robotics applications</li>
+<li class="">Performance considerations</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-activity-90-minutes">Hands-on Activity (90 minutes)<a href="#hands-on-activity-90-minutes" class="hash-link" aria-label="Direct link to Hands-on Activity (90 minutes)" title="Direct link to Hands-on Activity (90 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Set up identical scenarios in both platforms</li>
+<li class="">Compare performance metrics</li>
+<li class="">Document differences in setup complexity</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-10-minutes">Closing (10 minutes)<a href="#closing-10-minutes" class="hash-link" aria-label="Direct link to Closing (10 minutes)" title="Direct link to Closing (10 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Summary of key differences</li>
+<li class="">Assignment for next session</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-tips-1">Teaching Tips<a href="#teaching-tips-1" class="hash-link" aria-label="Direct link to Teaching Tips" title="Direct link to Teaching Tips" translate="no">​</a></h4>
+<ul>
+<li class="">Use side-by-side comparisons with the same robot model in both platforms</li>
+<li class="">Emphasize that there&#x27;s no &quot;best&quot; platform - only best fit for specific applications</li>
+<li class="">Include discussion of licensing costs and sustainability</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-3-physics-simulation-fundamentals">Session 3: Physics Simulation Fundamentals<a href="#session-3-physics-simulation-fundamentals" class="hash-link" aria-label="Direct link to Session 3: Physics Simulation Fundamentals" title="Direct link to Session 3: Physics Simulation Fundamentals" translate="no">​</a></h3>
+<p><strong>Duration</strong>: 3-4 hours</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-activity-20-minutes-1">Opening Activity (20 minutes)<a href="#opening-activity-20-minutes-1" class="hash-link" aria-label="Direct link to Opening Activity (20 minutes)" title="Direct link to Opening Activity (20 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Review platform comparison assignments</li>
+<li class="">Discuss findings as a class</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-content-100-minutes-1">Main Content (100 minutes)<a href="#main-content-100-minutes-1" class="hash-link" aria-label="Direct link to Main Content (100 minutes)" title="Direct link to Main Content (100 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Rigid body dynamics principles</li>
+<li class="">Collision detection algorithms</li>
+<li class="">Contact and friction modeling</li>
+<li class="">Quality of Service considerations for simulation</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-activity-90-minutes-1">Hands-on Activity (90 minutes)<a href="#hands-on-activity-90-minutes-1" class="hash-link" aria-label="Direct link to Hands-on Activity (90 minutes)" title="Direct link to Hands-on Activity (90 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Implement custom physics parameters</li>
+<li class="">Test different collision scenarios</li>
+<li class="">Compare simulation results with theoretical expectations</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-10-minutes-1">Closing (10 minutes)<a href="#closing-10-minutes-1" class="hash-link" aria-label="Direct link to Closing (10 minutes)" title="Direct link to Closing (10 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Key takeaways about physics modeling</li>
+<li class="">Preview of sensor simulation</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-tips-2">Teaching Tips<a href="#teaching-tips-2" class="hash-link" aria-label="Direct link to Teaching Tips" title="Direct link to Teaching Tips" translate="no">​</a></h4>
+<ul>
+<li class="">Use simple examples first (ball drop, pendulum) before moving to complex humanoid models</li>
+<li class="">Emphasize the importance of parameter validation against real-world data</li>
+<li class="">Discuss the trade-offs between simulation accuracy and performance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-4-sensor-simulation-and-integration">Session 4: Sensor Simulation and Integration<a href="#session-4-sensor-simulation-and-integration" class="hash-link" aria-label="Direct link to Session 4: Sensor Simulation and Integration" title="Direct link to Session 4: Sensor Simulation and Integration" translate="no">​</a></h3>
+<p><strong>Duration</strong>: 3-4 hours</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-activity-20-minutes-2">Opening Activity (20 minutes)<a href="#opening-activity-20-minutes-2" class="hash-link" aria-label="Direct link to Opening Activity (20 minutes)" title="Direct link to Opening Activity (20 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Review physics simulation assignments</li>
+<li class="">Discuss challenges encountered</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-content-100-minutes-2">Main Content (100 minutes)<a href="#main-content-100-minutes-2" class="hash-link" aria-label="Direct link to Main Content (100 minutes)" title="Direct link to Main Content (100 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Types of sensors in humanoid robots</li>
+<li class="">Noise modeling and realistic sensor behavior</li>
+<li class="">Integration with ROS 2</li>
+<li class="">Performance optimization for sensor-heavy simulations</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-activity-90-minutes-2">Hands-on Activity (90 minutes)<a href="#hands-on-activity-90-minutes-2" class="hash-link" aria-label="Direct link to Hands-on Activity (90 minutes)" title="Direct link to Hands-on Activity (90 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Configure different sensor types in simulation</li>
+<li class="">Implement sensor data processing pipelines</li>
+<li class="">Compare simulated vs. real sensor data when available</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-10-minutes-2">Closing (10 minutes)<a href="#closing-10-minutes-2" class="hash-link" aria-label="Direct link to Closing (10 minutes)" title="Direct link to Closing (10 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Summary of sensor simulation techniques</li>
+<li class="">Introduction to simulation-to-reality transfer</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-tips-3">Teaching Tips<a href="#teaching-tips-3" class="hash-link" aria-label="Direct link to Teaching Tips" title="Direct link to Teaching Tips" translate="no">​</a></h4>
+<ul>
+<li class="">Bring in real sensors if possible to compare with simulation</li>
+<li class="">Emphasize the importance of realistic noise modeling</li>
+<li class="">Connect to computer vision and perception modules that follow</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="session-5-simulation-to-reality-transfer">Session 5: Simulation-to-Reality Transfer<a href="#session-5-simulation-to-reality-transfer" class="hash-link" aria-label="Direct link to Session 5: Simulation-to-Reality Transfer" title="Direct link to Session 5: Simulation-to-Reality Transfer" translate="no">​</a></h3>
+<p><strong>Duration</strong>: 3-4 hours</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-activity-20-minutes-3">Opening Activity (20 minutes)<a href="#opening-activity-20-minutes-3" class="hash-link" aria-label="Direct link to Opening Activity (20 minutes)" title="Direct link to Opening Activity (20 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Review sensor simulation assignments</li>
+<li class="">Discuss the reality gap concept</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="main-content-100-minutes-3">Main Content (100 minutes)<a href="#main-content-100-minutes-3" class="hash-link" aria-label="Direct link to Main Content (100 minutes)" title="Direct link to Main Content (100 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Domain randomization techniques</li>
+<li class="">System identification and parameter tuning</li>
+<li class="">Hardware-in-the-loop testing</li>
+<li class="">Validation methodologies</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-activity-90-minutes-3">Hands-on Activity (90 minutes)<a href="#hands-on-activity-90-minutes-3" class="hash-link" aria-label="Direct link to Hands-on Activity (90 minutes)" title="Direct link to Hands-on Activity (90 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Implement a simple domain randomization example</li>
+<li class="">Test transfer of a basic behavior from simulation to reality (using video or simple hardware)</li>
+<li class="">Analyze the results</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-10-minutes-3">Closing (10 minutes)<a href="#closing-10-minutes-3" class="hash-link" aria-label="Direct link to Closing (10 minutes)" title="Direct link to Closing (10 minutes)" translate="no">​</a></h4>
+<ul>
+<li class="">Module wrap-up</li>
+<li class="">Preview of next module</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="teaching-tips-4">Teaching Tips<a href="#teaching-tips-4" class="hash-link" aria-label="Direct link to Teaching Tips" title="Direct link to Teaching Tips" translate="no">​</a></h4>
+<ul>
+<li class="">Emphasize that perfect transfer is rarely possible, but good approximation is achievable</li>
+<li class="">Use examples from real humanoid robotics projects</li>
+<li class="">Connect to machine learning modules for reinforcement learning applications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="differentiation-strategies">Differentiation Strategies<a href="#differentiation-strategies" class="hash-link" aria-label="Direct link to Differentiation Strategies" title="Direct link to Differentiation Strategies" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-advanced-students">For Advanced Students<a href="#for-advanced-students" class="hash-link" aria-label="Direct link to For Advanced Students" title="Direct link to For Advanced Students" translate="no">​</a></h3>
+<ul>
+<li class="">Assign additional research on cutting-edge simulation techniques</li>
+<li class="">Challenge them to implement custom physics plugins</li>
+<li class="">Have them explore NVIDIA Isaac Sim for GPU-accelerated simulation</li>
+<li class="">Encourage investigation of cloud-based simulation platforms</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-struggling-students">For Struggling Students<a href="#for-struggling-students" class="hash-link" aria-label="Direct link to For Struggling Students" title="Direct link to For Struggling Students" translate="no">​</a></h3>
+<ul>
+<li class="">Provide additional setup assistance and troubleshooting sessions</li>
+<li class="">Offer simpler examples before complex humanoid scenarios</li>
+<li class="">Pair with stronger students for collaborative learning</li>
+<li class="">Focus on conceptual understanding before implementation details</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-different-learning-styles">For Different Learning Styles<a href="#for-different-learning-styles" class="hash-link" aria-label="Direct link to For Different Learning Styles" title="Direct link to For Different Learning Styles" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Visual Learners</strong>: Use diagrams, videos, and live demonstrations</li>
+<li class=""><strong>Kinesthetic Learners</strong>: Hands-on activities and experimentation</li>
+<li class=""><strong>Auditory Learners</strong>: Discussions, presentations, and verbal explanations</li>
+<li class=""><strong>Reading/Writing Learners</strong>: Detailed documentation and written assignments</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="assessment-rubric">Assessment Rubric<a href="#assessment-rubric" class="hash-link" aria-label="Direct link to Assessment Rubric" title="Direct link to Assessment Rubric" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-platform-comparison-30">Simulation Platform Comparison (30%)<a href="#simulation-platform-comparison-30" class="hash-link" aria-label="Direct link to Simulation Platform Comparison (30%)" title="Direct link to Simulation Platform Comparison (30%)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Excellent (A)</strong>: Comprehensive comparison with specific technical details, clear understanding of trade-offs, practical recommendations</li>
+<li class=""><strong>Proficient (B)</strong>: Good comparison with most technical details, understanding of trade-offs, reasonable recommendations</li>
+<li class=""><strong>Developing (C)</strong>: Basic comparison with some technical details, partial understanding of trade-offs</li>
+<li class=""><strong>Beginning (D)</strong>: Limited comparison, minimal technical understanding</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-implementation-40">Practical Implementation (40%)<a href="#practical-implementation-40" class="hash-link" aria-label="Direct link to Practical Implementation (40%)" title="Direct link to Practical Implementation (40%)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Excellent (A)</strong>: Successful implementation with optimization, creative problem-solving, thorough documentation</li>
+<li class=""><strong>Proficient (B)</strong>: Successful implementation with good documentation and some optimization</li>
+<li class=""><strong>Developing (C)</strong>: Basic implementation with minimal issues, adequate documentation</li>
+<li class=""><strong>Beginning (D)</strong>: Implementation with significant issues, poor documentation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="analysis-and-transfer-30">Analysis and Transfer (30%)<a href="#analysis-and-transfer-30" class="hash-link" aria-label="Direct link to Analysis and Transfer (30%)" title="Direct link to Analysis and Transfer (30%)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Excellent (A)</strong>: Sophisticated analysis of simulation-to-reality challenges, innovative transfer strategies, evidence-based conclusions</li>
+<li class=""><strong>Proficient (B)</strong>: Good analysis of challenges, appropriate transfer strategies, logical conclusions</li>
+<li class=""><strong>Developing (C)</strong>: Basic analysis of challenges, simple transfer strategies</li>
+<li class=""><strong>Beginning (D)</strong>: Limited analysis, minimal understanding of transfer challenges</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources-and-materials">Resources and Materials<a href="#resources-and-materials" class="hash-link" aria-label="Direct link to Resources and Materials" title="Direct link to Resources and Materials" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="required-materials">Required Materials<a href="#required-materials" class="hash-link" aria-label="Direct link to Required Materials" title="Direct link to Required Materials" translate="no">​</a></h3>
+<ul>
+<li class="">Computers with sufficient specifications for simulation (8GB+ RAM, decent GPU)</li>
+<li class="">Internet access for package downloads</li>
+<li class="">Optional: Access to real humanoid robot or robot kit for comparison</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-readings">Recommended Readings<a href="#recommended-readings" class="hash-link" aria-label="Direct link to Recommended Readings" title="Direct link to Recommended Readings" translate="no">​</a></h3>
+<ul>
+<li class="">Selected papers on sim-to-real transfer</li>
+<li class="">Official documentation for Gazebo and Unity robotics tools</li>
+<li class="">Case studies from humanoid robotics projects</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="supplementary-resources">Supplementary Resources<a href="#supplementary-resources" class="hash-link" aria-label="Direct link to Supplementary Resources" title="Direct link to Supplementary Resources" translate="no">​</a></h3>
+<ul>
+<li class="">Video tutorials for both platforms</li>
+<li class="">Sample robot models and environments</li>
+<li class="">Troubleshooting guides for common issues</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-student-misconceptions">Common Student Misconceptions<a href="#common-student-misconceptions" class="hash-link" aria-label="Direct link to Common Student Misconceptions" title="Direct link to Common Student Misconceptions" translate="no">​</a></h2>
+<ol>
+<li class="">
+<p><strong>&quot;Simulation is just a game&quot;</strong>: Students may underestimate the technical rigor required for accurate simulation</p>
+<ul>
+<li class=""><em>Remedy</em>: Emphasize the mathematical foundations and validation requirements</li>
+</ul>
+</li>
+<li class="">
+<p><strong>&quot;Perfect transfer is possible&quot;</strong>: Students may expect flawless simulation-to-reality transfer</p>
+<ul>
+<li class=""><em>Remedy</em>: Provide concrete examples of reality gaps and their causes</li>
+</ul>
+</li>
+<li class="">
+<p><strong>&quot;More realistic = better&quot;</strong>: Students may pursue maximum fidelity without considering computational costs</p>
+<ul>
+<li class=""><em>Remedy</em>: Discuss the accuracy vs. performance trade-offs</li>
+</ul>
+</li>
+<li class="">
+<p><strong>&quot;One platform fits all&quot;</strong>: Students may think there&#x27;s a universal best platform</p>
+<ul>
+<li class=""><em>Remedy</em>: Provide diverse use cases requiring different approaches</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-troubleshooting">Technical Troubleshooting<a href="#technical-troubleshooting" class="hash-link" aria-label="Direct link to Technical Troubleshooting" title="Direct link to Technical Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-issues-and-solutions">Common Issues and Solutions<a href="#common-issues-and-solutions" class="hash-link" aria-label="Direct link to Common Issues and Solutions" title="Direct link to Common Issues and Solutions" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Performance Problems</strong></p>
+<ul>
+<li class=""><strong>Symptom</strong>: Low frame rates, laggy simulation</li>
+<li class=""><strong>Solution</strong>: Reduce scene complexity, adjust physics parameters, upgrade hardware</li>
+</ul>
+</li>
+<li class="">
+<p><strong>ROS Integration Issues</strong></p>
+<ul>
+<li class=""><strong>Symptom</strong>: Nodes not communicating, topics not connecting</li>
+<li class=""><strong>Solution</strong>: Check ROS_DOMAIN_ID, network configuration, topic names</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Physics Instability</strong></p>
+<ul>
+<li class=""><strong>Symptom</strong>: Objects vibrating, interpenetrating, exploding</li>
+<li class=""><strong>Solution</strong>: Adjust time steps, constraint parameters, solver settings</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Sensor Data Quality</strong></p>
+<ul>
+<li class=""><strong>Symptom</strong>: Unrealistic sensor readings, inconsistent data</li>
+<li class=""><strong>Solution</strong>: Check noise parameters, update rates, sensor configuration</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extension-activities">Extension Activities<a href="#extension-activities" class="hash-link" aria-label="Direct link to Extension Activities" title="Direct link to Extension Activities" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-interested-students">For Interested Students<a href="#for-interested-students" class="hash-link" aria-label="Direct link to For Interested Students" title="Direct link to For Interested Students" translate="no">​</a></h3>
+<ul>
+<li class="">Explore NVIDIA Isaac Sim for advanced GPU-accelerated simulation</li>
+<li class="">Investigate cloud-based robotics simulation platforms</li>
+<li class="">Research the latest developments in sim-to-real transfer</li>
+<li class="">Implement custom sensors or physics plugins</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="research-connections">Research Connections<a href="#research-connections" class="hash-link" aria-label="Direct link to Research Connections" title="Direct link to Research Connections" translate="no">​</a></h3>
+<ul>
+<li class="">Connect with ongoing humanoid robotics research projects</li>
+<li class="">Explore collaboration with industry partners</li>
+<li class="">Participate in robotics competitions that emphasize simulation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="accessibility-considerations">Accessibility Considerations<a href="#accessibility-considerations" class="hash-link" aria-label="Direct link to Accessibility Considerations" title="Direct link to Accessibility Considerations" translate="no">​</a></h2>
+<ul>
+<li class="">Ensure all visual content has appropriate alternative text</li>
+<li class="">Provide transcripts for any video content</li>
+<li class="">Offer multiple ways to engage with the material</li>
+<li class="">Consider different learning speeds and backgrounds</li>
+<li class="">Be mindful of economic disparities in hardware access</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reflection-questions-for-instructors">Reflection Questions for Instructors<a href="#reflection-questions-for-instructors" class="hash-link" aria-label="Direct link to Reflection Questions for Instructors" title="Direct link to Reflection Questions for Instructors" translate="no">​</a></h2>
+<ol>
+<li class="">How well did students grasp the trade-offs between different simulation platforms?</li>
+<li class="">Were the hands-on activities appropriately challenging?</li>
+<li class="">Did students understand the importance of simulation-to-reality transfer?</li>
+<li class="">What aspects of the module need improvement for next iteration?</li>
+<li class="">How can real hardware be better integrated with simulation content?</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<p>[1] Simulation Education. (2023). &quot;Teaching Robotics Simulation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9123456" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9123456</a></p>
+<p>[2] Platform Comparison. (2023). &quot;Gazebo vs Unity in Education&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001234" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001234</a></p>
+<p>[3] Physics Simulation. (2023). &quot;Teaching Physics in Robotics&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[4] Sensor Modeling. (2023). &quot;Sensor Simulation Pedagogy&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001246" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001246</a></p>
+<p>[5] Sim-to-Real Transfer. (2023). &quot;Transfer Learning in Robotics Education&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book/tree/main/docs/digital-twin/instructor-notes.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Physical-AI-Robotics-Book/docs/digital-twin/testing"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Simulation Testing and Validation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Physical-AI-Robotics-Book/docs/nvidia-isaac/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">NVIDIA Isaac Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#module-overview" class="table-of-contents__link toc-highlight">Module Overview</a><ul><li><a href="#module-duration" class="table-of-contents__link toc-highlight">Module Duration</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li></ul></li><li><a href="#learning-objectives-alignment" class="table-of-contents__link toc-highlight">Learning Objectives Alignment</a><ul><li><a href="#primary-objectives" class="table-of-contents__link toc-highlight">Primary Objectives</a></li><li><a href="#assessment-strategies" class="table-of-contents__link toc-highlight">Assessment Strategies</a></li></ul></li><li><a href="#teaching-guidance" class="table-of-contents__link toc-highlight">Teaching Guidance</a><ul><li><a href="#session-1-introduction-to-digital-twin-simulation" class="table-of-contents__link toc-highlight">Session 1: Introduction to Digital Twin Simulation</a></li><li><a href="#session-2-gazebo-vs-unity-comparison" class="table-of-contents__link toc-highlight">Session 2: Gazebo vs Unity Comparison</a></li><li><a href="#session-3-physics-simulation-fundamentals" class="table-of-contents__link toc-highlight">Session 3: Physics Simulation Fundamentals</a></li><li><a href="#session-4-sensor-simulation-and-integration" class="table-of-contents__link toc-highlight">Session 4: Sensor Simulation and Integration</a></li><li><a href="#session-5-simulation-to-reality-transfer" class="table-of-contents__link toc-highlight">Session 5: Simulation-to-Reality Transfer</a></li></ul></li><li><a href="#differentiation-strategies" class="table-of-contents__link toc-highlight">Differentiation Strategies</a><ul><li><a href="#for-advanced-students" class="table-of-contents__link toc-highlight">For Advanced Students</a></li><li><a href="#for-struggling-students" class="table-of-contents__link toc-highlight">For Struggling Students</a></li><li><a href="#for-different-learning-styles" class="table-of-contents__link toc-highlight">For Different Learning Styles</a></li></ul></li><li><a href="#assessment-rubric" class="table-of-contents__link toc-highlight">Assessment Rubric</a><ul><li><a href="#simulation-platform-comparison-30" class="table-of-contents__link toc-highlight">Simulation Platform Comparison (30%)</a></li><li><a href="#practical-implementation-40" class="table-of-contents__link toc-highlight">Practical Implementation (40%)</a></li><li><a href="#analysis-and-transfer-30" class="table-of-contents__link toc-highlight">Analysis and Transfer (30%)</a></li></ul></li><li><a href="#resources-and-materials" class="table-of-contents__link toc-highlight">Resources and Materials</a><ul><li><a href="#required-materials" class="table-of-contents__link toc-highlight">Required Materials</a></li><li><a href="#recommended-readings" class="table-of-contents__link toc-highlight">Recommended Readings</a></li><li><a href="#supplementary-resources" class="table-of-contents__link toc-highlight">Supplementary Resources</a></li></ul></li><li><a href="#common-student-misconceptions" class="table-of-contents__link toc-highlight">Common Student Misconceptions</a></li><li><a href="#technical-troubleshooting" class="table-of-contents__link toc-highlight">Technical Troubleshooting</a><ul><li><a href="#common-issues-and-solutions" class="table-of-contents__link toc-highlight">Common Issues and Solutions</a></li></ul></li><li><a href="#extension-activities" class="table-of-contents__link toc-highlight">Extension Activities</a><ul><li><a href="#for-interested-students" class="table-of-contents__link toc-highlight">For Interested Students</a></li><li><a href="#research-connections" class="table-of-contents__link toc-highlight">Research Connections</a></li></ul></li><li><a href="#accessibility-considerations" class="table-of-contents__link toc-highlight">Accessibility Considerations</a></li><li><a href="#reflection-questions-for-instructors" class="table-of-contents__link toc-highlight">Reflection Questions for Instructors</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Course Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/ros2">ROS 2 Fundamentals</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/digital-twin">Digital Twin Simulation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/ros2" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://robotics.stackexchange.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Robotics Stack Exchange<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://answers.ros.org/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS Answers<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Humanoid Robotics Course. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

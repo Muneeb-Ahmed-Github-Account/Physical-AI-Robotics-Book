@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-hardware-guide/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Hardware Guide Overview | Humanoid Robotics &amp; Physical AI Course Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Hardware Guide Overview | Humanoid Robotics &amp; Physical AI Course Book"><meta data-rh="true" name="description" content="Comprehensive hardware guide for humanoid robotics applications and physical AI systems"><meta data-rh="true" property="og:description" content="Comprehensive hardware guide for humanoid robotics applications and physical AI systems"><link data-rh="true" rel="icon" href="/Physical-AI-Robotics-Book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/" hreflang="en"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hardware Guide Overview","item":"https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/"}]}</script><link rel="stylesheet" href="/Physical-AI-Robotics-Book/assets/css/styles.599a2b8b.css">
+<script src="/Physical-AI-Robotics-Book/assets/js/runtime~main.36aa1060.js" defer="defer"></script>
+<script src="/Physical-AI-Robotics-Book/assets/js/main.c3ed864b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/Physical-AI-Robotics-Book/docs/intro"><div class="navbar__logo"><img src="/Physical-AI-Robotics-Book/img/logo.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40" width="180"><img src="/Physical-AI-Robotics-Book/img/logo-dark.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40" width="180"></div><b class="navbar__title text--truncate">Humanoid Robotics Book</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Physical-AI-Robotics-Book/docs/intro">Course Book</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-username/humanoid-robotics-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/intro"><span title="Introduction" class="linkLabel_WmDU">Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/course-summary"><span title="Course Summary &amp; Learning Path" class="linkLabel_WmDU">Course Summary &amp; Learning Path</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical-AI-Robotics-Book/docs/assessment-rubrics"><span title="Assessment Rubrics" class="linkLabel_WmDU">Assessment Rubrics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/ros2/"><span title="ROS 2 Fundamentals" class="categoryLinkLabel_W154">ROS 2 Fundamentals</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/digital-twin/"><span title="Digital Twin Simulation" class="categoryLinkLabel_W154">Digital Twin Simulation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/nvidia-isaac/"><span title="NVIDIA Isaac" class="categoryLinkLabel_W154">NVIDIA Isaac</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/vla-systems/"><span title="Vision-Language-Action Systems" class="categoryLinkLabel_W154">Vision-Language-Action Systems</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical-AI-Robotics-Book/docs/capstone-humanoid/"><span title="Capstone Humanoid Project" class="categoryLinkLabel_W154">Capstone Humanoid Project</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Physical-AI-Robotics-Book/docs/hardware-guide/"><span title="Hardware Guide" class="categoryLinkLabel_W154">Hardware Guide</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Physical-AI-Robotics-Book/docs/hardware-guide/"><span title="Hardware Guide Overview" class="linkLabel_WmDU">Hardware Guide Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/hardware-guide/workstation-setup"><span title="RTX Workstation Setup" class="linkLabel_WmDU">RTX Workstation Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/hardware-guide/jetson-kits"><span title="Jetson Platform Guidance" class="linkLabel_WmDU">Jetson Platform Guidance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/hardware-guide/sensors"><span title="Sensor Selection and Integration" class="linkLabel_WmDU">Sensor Selection and Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Robotics-Book/docs/hardware-guide/robot-options"><span title="Humanoid Robot Platform Options" class="linkLabel_WmDU">Humanoid Robot Platform Options</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Physical-AI-Robotics-Book/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Hardware Guide</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Hardware Guide Overview</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Hardware Guide Overview</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>After reviewing this hardware guide, students will be able to:</p>
+<ul>
+<li class="">Understand the hardware requirements for humanoid robotics development [1]</li>
+<li class="">Select appropriate computing platforms for different robotics applications [2]</li>
+<li class="">Choose suitable sensors for perception tasks in humanoid robots [3]</li>
+<li class="">Evaluate humanoid robot platforms for specific applications [4]</li>
+<li class="">Integrate hardware components with software systems [5]</li>
+<li class="">Understand the trade-offs between different hardware configurations [6]</li>
+<li class="">Apply hardware selection criteria to specific use cases [7]</li>
+<li class="">Plan hardware acquisition and setup workflows [8]</li>
+<li class="">Connect theoretical concepts to practical hardware implementations [9]</li>
+<li class="">Validate hardware recommendations against application requirements [10]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-categories-for-humanoid-robotics">Hardware Categories for Humanoid Robotics<a href="#hardware-categories-for-humanoid-robotics" class="hash-link" aria-label="Direct link to Hardware Categories for Humanoid Robotics" title="Direct link to Hardware Categories for Humanoid Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-computing-platforms">1. Computing Platforms<a href="#1-computing-platforms" class="hash-link" aria-label="Direct link to 1. Computing Platforms" title="Direct link to 1. Computing Platforms" translate="no">​</a></h3>
+<p>Humanoid robotics applications require significant computational resources for perception, planning, and control. The hardware guide covers three main categories of computing platforms:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rtx-workstations">RTX Workstations<a href="#rtx-workstations" class="hash-link" aria-label="Direct link to RTX Workstations" title="Direct link to RTX Workstations" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Development, simulation, and training environments [11]</li>
+<li class=""><strong>Requirements</strong>: High-performance GPUs for real-time perception and learning [12]</li>
+<li class=""><strong>Specifications</strong>: NVIDIA RTX series with CUDA capability 6.0+ [13]</li>
+<li class=""><strong>Use Cases</strong>: Model training, simulation, offline planning [14]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-platforms">Jetson Platforms<a href="#jetson-platforms" class="hash-link" aria-label="Direct link to Jetson Platforms" title="Direct link to Jetson Platforms" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Edge computing and on-robot processing [15]</li>
+<li class=""><strong>Requirements</strong>: Power-efficient computing for mobile platforms [16]</li>
+<li class=""><strong>Specifications</strong>: NVIDIA Jetson AGX Orin, Xavier, or Nano [17]</li>
+<li class=""><strong>Use Cases</strong>: Real-time perception, control, navigation [18]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="embedded-systems">Embedded Systems<a href="#embedded-systems" class="hash-link" aria-label="Direct link to Embedded Systems" title="Direct link to Embedded Systems" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Distributed processing throughout humanoid robot [19]</li>
+<li class=""><strong>Requirements</strong>: Low-power, real-time capable processors [20]</li>
+<li class=""><strong>Specifications</strong>: ARM-based SoCs, microcontrollers [21]</li>
+<li class=""><strong>Use Cases</strong>: Joint control, sensor processing, communication [22]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-sensing-systems">2. Sensing Systems<a href="#2-sensing-systems" class="hash-link" aria-label="Direct link to 2. Sensing Systems" title="Direct link to 2. Sensing Systems" translate="no">​</a></h3>
+<p>Effective humanoid robots require comprehensive sensing capabilities to perceive and interact with their environment:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-systems">Vision Systems<a href="#vision-systems" class="hash-link" aria-label="Direct link to Vision Systems" title="Direct link to Vision Systems" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>RGB Cameras</strong>: Color image capture for object recognition [23]</li>
+<li class=""><strong>Depth Sensors</strong>: 3D perception for navigation and manipulation [24]</li>
+<li class=""><strong>Stereo Cameras</strong>: Binocular vision for depth estimation [25]</li>
+<li class=""><strong>Event Cameras</strong>: High-speed motion detection [26]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-sensors">Environmental Sensors<a href="#environmental-sensors" class="hash-link" aria-label="Direct link to Environmental Sensors" title="Direct link to Environmental Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>LiDAR</strong>: Precise distance measurement for mapping [27]</li>
+<li class=""><strong>IMU</strong>: Inertial measurement for balance and motion [28]</li>
+<li class=""><strong>Force/Torque Sensors</strong>: Contact detection and manipulation [29]</li>
+<li class=""><strong>GPS</strong>: Outdoor positioning and navigation [30]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="specialized-sensors">Specialized Sensors<a href="#specialized-sensors" class="hash-link" aria-label="Direct link to Specialized Sensors" title="Direct link to Specialized Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Microphones</strong>: Audio input for speech interaction [31]</li>
+<li class=""><strong>Cameras</strong>: Visual perception systems [32]</li>
+<li class=""><strong>Tactile Sensors</strong>: Touch and grip feedback [33]</li>
+<li class=""><strong>Temperature/Humidity</strong>: Environmental monitoring [34]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-actuation-systems">3. Actuation Systems<a href="#3-actuation-systems" class="hash-link" aria-label="Direct link to 3. Actuation Systems" title="Direct link to 3. Actuation Systems" translate="no">​</a></h3>
+<p>Humanoid robots require sophisticated actuation systems for movement and interaction:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="joint-actuators">Joint Actuators<a href="#joint-actuators" class="hash-link" aria-label="Direct link to Joint Actuators" title="Direct link to Joint Actuators" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Servo Motors</strong>: Precise position control [35]</li>
+<li class=""><strong>Brushless DC Motors</strong>: High power-to-weight ratio [36]</li>
+<li class=""><strong>Series Elastic Actuators</strong>: Safe human interaction [37]</li>
+<li class=""><strong>Pneumatic Muscles</strong>: Biomimetic actuation [38]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="manipulation-systems">Manipulation Systems<a href="#manipulation-systems" class="hash-link" aria-label="Direct link to Manipulation Systems" title="Direct link to Manipulation Systems" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Robotic Hands</strong>: Dextrous manipulation [39]</li>
+<li class=""><strong>Grippers</strong>: Basic object grasping [40]</li>
+<li class=""><strong>Tool Changers</strong>: Versatile end-effectors [41]</li>
+<li class=""><strong>Force Control</strong>: Compliant manipulation [42]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-selection-criteria">Hardware Selection Criteria<a href="#hardware-selection-criteria" class="hash-link" aria-label="Direct link to Hardware Selection Criteria" title="Direct link to Hardware Selection Criteria" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-requirements">Performance Requirements<a href="#performance-requirements" class="hash-link" aria-label="Direct link to Performance Requirements" title="Direct link to Performance Requirements" translate="no">​</a></h3>
+<p>Hardware selection must consider the specific computational and real-time requirements of humanoid robotics applications:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="processing-power">Processing Power<a href="#processing-power" class="hash-link" aria-label="Direct link to Processing Power" title="Direct link to Processing Power" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Perception</strong>: Real-time computer vision and sensor fusion [43]</li>
+<li class=""><strong>Planning</strong>: Motion and task planning algorithms [44]</li>
+<li class=""><strong>Control</strong>: Real-time feedback control systems [45]</li>
+<li class=""><strong>Learning</strong>: On-device learning and adaptation [46]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="memory-and-storage">Memory and Storage<a href="#memory-and-storage" class="hash-link" aria-label="Direct link to Memory and Storage" title="Direct link to Memory and Storage" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>RAM</strong>: Sufficient for real-time processing [47]</li>
+<li class=""><strong>Storage</strong>: For models, maps, and operational data [48]</li>
+<li class=""><strong>Bandwidth</strong>: High-speed memory access for AI workloads [49]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-consumption">Power Consumption<a href="#power-consumption" class="hash-link" aria-label="Direct link to Power Consumption" title="Direct link to Power Consumption" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Mobile Platforms</strong>: Battery life optimization [50]</li>
+<li class=""><strong>Stationary Systems</strong>: Performance vs. efficiency trade-offs [51]</li>
+<li class=""><strong>Thermal Management</strong>: Heat dissipation and cooling [52]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-considerations">Integration Considerations<a href="#integration-considerations" class="hash-link" aria-label="Direct link to Integration Considerations" title="Direct link to Integration Considerations" translate="no">​</a></h3>
+<p>Hardware components must integrate seamlessly with software systems:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-interfaces">Communication Interfaces<a href="#communication-interfaces" class="hash-link" aria-label="Direct link to Communication Interfaces" title="Direct link to Communication Interfaces" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Ethernet</strong>: High-bandwidth wired communication [53]</li>
+<li class=""><strong>WiFi/5G</strong>: Wireless connectivity for remote operation [54]</li>
+<li class=""><strong>CAN Bus</strong>: Robust communication for distributed systems [55]</li>
+<li class=""><strong>USB</strong>: Peripheral connectivity [56]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-compatibility">Software Compatibility<a href="#software-compatibility" class="hash-link" aria-label="Direct link to Software Compatibility" title="Direct link to Software Compatibility" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ROS 2 Support</strong>: Native integration with robotics framework [57]</li>
+<li class=""><strong>Driver Availability</strong>: Reliable hardware drivers [58]</li>
+<li class=""><strong>API Access</strong>: Programmatic control interfaces [59]</li>
+<li class=""><strong>Real-time OS</strong>: Deterministic operation support [60]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-recommendations">Platform Recommendations<a href="#platform-recommendations" class="hash-link" aria-label="Direct link to Platform Recommendations" title="Direct link to Platform Recommendations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rtx-workstation-configurations">RTX Workstation Configurations<a href="#rtx-workstation-configurations" class="hash-link" aria-label="Direct link to RTX Workstation Configurations" title="Direct link to RTX Workstation Configurations" translate="no">​</a></h3>
+<p>For development and simulation environments:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="entry-level-development-station">Entry-Level Development Station<a href="#entry-level-development-station" class="hash-link" aria-label="Direct link to Entry-Level Development Station" title="Direct link to Entry-Level Development Station" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: NVIDIA RTX 4070 or equivalent [61]</li>
+<li class=""><strong>CPU</strong>: Multi-core processor (8+ cores) [62]</li>
+<li class=""><strong>RAM</strong>: 32GB DDR4/DDR5 [63]</li>
+<li class=""><strong>Storage</strong>: 1TB NVMe SSD [64]</li>
+<li class=""><strong>Use Case</strong>: Basic simulation and development [65]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="professional-workstation">Professional Workstation<a href="#professional-workstation" class="hash-link" aria-label="Direct link to Professional Workstation" title="Direct link to Professional Workstation" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: NVIDIA RTX 6000 Ada or RTX A6000 [66]</li>
+<li class=""><strong>CPU</strong>: High-core-count processor (16+ cores) [67]</li>
+<li class=""><strong>RAM</strong>: 64GB+ ECC memory [68]</li>
+<li class=""><strong>Storage</strong>: 2TB+ NVMe SSD + 4TB HDD [69]</li>
+<li class=""><strong>Use Case</strong>: Complex simulation, training, real-time processing [70]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="researchenterprise-station">Research/Enterprise Station<a href="#researchenterprise-station" class="hash-link" aria-label="Direct link to Research/Enterprise Station" title="Direct link to Research/Enterprise Station" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: Multi-GPU setup (2-4 RTX 6000 Ada) [71]</li>
+<li class=""><strong>CPU</strong>: High-performance server processor [72]</li>
+<li class=""><strong>RAM</strong>: 128GB+ DDR5 ECC [73]</li>
+<li class=""><strong>Storage</strong>: RAID configuration with 10TB+ capacity [74]</li>
+<li class=""><strong>Use Case</strong>: Large-scale training, multi-robot simulation [75]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-platform-options">Jetson Platform Options<a href="#jetson-platform-options" class="hash-link" aria-label="Direct link to Jetson Platform Options" title="Direct link to Jetson Platform Options" translate="no">​</a></h3>
+<p>For embedded and edge computing applications:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-agx-orin">Jetson AGX Orin<a href="#jetson-agx-orin" class="hash-link" aria-label="Direct link to Jetson AGX Orin" title="Direct link to Jetson AGX Orin" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Compute</strong>: 275 TOPS AI performance [76]</li>
+<li class=""><strong>GPU</strong>: 2048-core NVIDIA Ampere GPU [77]</li>
+<li class=""><strong>CPU</strong>: 12-core ARM Cortex-A78AE v8.2 64-bit [78]</li>
+<li class=""><strong>Memory</strong>: 32GB 256-bit LPDDR5 [79]</li>
+<li class=""><strong>Best For</strong>: High-performance on-robot AI [80]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-orin-nx">Jetson Orin NX<a href="#jetson-orin-nx" class="hash-link" aria-label="Direct link to Jetson Orin NX" title="Direct link to Jetson Orin NX" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Compute</strong>: 100 TOPS AI performance [81]</li>
+<li class=""><strong>GPU</strong>: 1024-core NVIDIA Ampere GPU [82]</li>
+<li class=""><strong>CPU</strong>: 8-core ARM Cortex-A78AE v8.2 64-bit [83]</li>
+<li class=""><strong>Memory</strong>: 8GB or 16GB LPDDR4x [84]</li>
+<li class=""><strong>Best For</strong>: Mid-range embedded applications [85]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-nano">Jetson Nano<a href="#jetson-nano" class="hash-link" aria-label="Direct link to Jetson Nano" title="Direct link to Jetson Nano" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Compute</strong>: 0.5 TOPS AI performance [86]</li>
+<li class=""><strong>GPU</strong>: 128-core NVIDIA Maxwell GPU [87]</li>
+<li class=""><strong>CPU</strong>: Quad-core ARM Cortex-A57 MPCore [88]</li>
+<li class=""><strong>Memory</strong>: 4GB LPDDR4 [89]</li>
+<li class=""><strong>Best For</strong>: Basic perception and control [90]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-selection-guidelines">Sensor Selection Guidelines<a href="#sensor-selection-guidelines" class="hash-link" aria-label="Direct link to Sensor Selection Guidelines" title="Direct link to Sensor Selection Guidelines" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-system-recommendations">Vision System Recommendations<a href="#vision-system-recommendations" class="hash-link" aria-label="Direct link to Vision System Recommendations" title="Direct link to Vision System Recommendations" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgb-d-cameras">RGB-D Cameras<a href="#rgb-d-cameras" class="hash-link" aria-label="Direct link to RGB-D Cameras" title="Direct link to RGB-D Cameras" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Intel RealSense D435/D435i</strong>: Good depth accuracy [91]</li>
+<li class=""><strong>Azure Kinect DK</strong>: High-quality RGB and depth [92]</li>
+<li class=""><strong>StereoLabs ZED</strong>: Stereo vision with IMU [93]</li>
+<li class=""><strong>Requirements</strong>: USB 3.0+, Linux support, ROS drivers [94]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-sensors">LiDAR Sensors<a href="#lidar-sensors" class="hash-link" aria-label="Direct link to LiDAR Sensors" title="Direct link to LiDAR Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Hokuyo UAM-05LP</strong>: Short-range, high accuracy [95]</li>
+<li class=""><strong>Velodyne Puck</strong>: Medium-range, 360° coverage [96]</li>
+<li class=""><strong>Ouster OS0</strong>: Solid-state, wide FOV [97]</li>
+<li class=""><strong>Requirements</strong>: Ethernet interface, outdoor capability [98]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-sensing">Environmental Sensing<a href="#environmental-sensing" class="hash-link" aria-label="Direct link to Environmental Sensing" title="Direct link to Environmental Sensing" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="imu-selection">IMU Selection<a href="#imu-selection" class="hash-link" aria-label="Direct link to IMU Selection" title="Direct link to IMU Selection" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>MTI-30</strong>: High-accuracy inertial measurement [99]</li>
+<li class=""><strong>XSens MTi-60</strong>: Orientation and motion tracking [100]</li>
+<li class=""><strong>Bosch BNO055</strong>: Integrated sensor fusion [101]</li>
+<li class=""><strong>Criteria</strong>: Gyro bias stability, magnetometer accuracy [102]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="forcetorque-sensors">Force/Torque Sensors<a href="#forcetorque-sensors" class="hash-link" aria-label="Direct link to Force/Torque Sensors" title="Direct link to Force/Torque Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ATI Gamma</strong>: High-precision force measurement [103]</li>
+<li class=""><strong>Wacoh-Tech</strong>: Multi-axis force sensing [104]</li>
+<li class=""><strong>Internal Strain Gauges</strong>: Integrated into joints [105]</li>
+<li class=""><strong>Requirements</strong>: High bandwidth, overload protection [106]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="humanoid-robot-platforms">Humanoid Robot Platforms<a href="#humanoid-robot-platforms" class="hash-link" aria-label="Direct link to Humanoid Robot Platforms" title="Direct link to Humanoid Robot Platforms" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="commercial-platforms">Commercial Platforms<a href="#commercial-platforms" class="hash-link" aria-label="Direct link to Commercial Platforms" title="Direct link to Commercial Platforms" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-end-platforms">High-End Platforms<a href="#high-end-platforms" class="hash-link" aria-label="Direct link to High-End Platforms" title="Direct link to High-End Platforms" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Boston Dynamics Atlas</strong>: Advanced mobility and manipulation [107]</li>
+<li class=""><strong>Honda ASIMO</strong>: Mature humanoid platform [108]</li>
+<li class=""><strong>SoftBank Pepper</strong>: Social interaction focus [109]</li>
+<li class=""><strong>Characteristics</strong>: High cost, limited availability [110]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="research-platforms">Research Platforms<a href="#research-platforms" class="hash-link" aria-label="Direct link to Research Platforms" title="Direct link to Research Platforms" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Aldebaran NAO</strong>: Educational and research use [111]</li>
+<li class=""><strong>SoftBank Romeo</strong>: Human-sized humanoid [112]</li>
+<li class=""><strong>Kondo KHR Series</strong>: Hobby/educational robots [113]</li>
+<li class=""><strong>Advantages</strong>: Better documentation, research community [114]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-source-platforms">Open-Source Platforms<a href="#open-source-platforms" class="hash-link" aria-label="Direct link to Open-Source Platforms" title="Direct link to Open-Source Platforms" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ROBOTIS OP3</strong>: Open platform for humanoid research [115]</li>
+<li class=""><strong>ROBOTIS DREAMER</strong>: Educational humanoid [116]</li>
+<li class=""><strong>InMoov</strong>: 3D-printable open robot [117]</li>
+<li class=""><strong>Benefits</strong>: Customizable, cost-effective [118]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-software-systems">Integration with Software Systems<a href="#integration-with-software-systems" class="hash-link" aria-label="Direct link to Integration with Software Systems" title="Direct link to Integration with Software Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ros-2-hardware-integration">ROS 2 Hardware Integration<a href="#ros-2-hardware-integration" class="hash-link" aria-label="Direct link to ROS 2 Hardware Integration" title="Direct link to ROS 2 Hardware Integration" translate="no">​</a></h3>
+<p>Hardware components must integrate with the ROS 2 ecosystem:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-abstraction-layer">Hardware Abstraction Layer<a href="#hardware-abstraction-layer" class="hash-link" aria-label="Direct link to Hardware Abstraction Layer" title="Direct link to Hardware Abstraction Layer" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ros2_control</strong>: Standardized hardware interface [119]</li>
+<li class=""><strong>Hardware interfaces</strong>: Joint, sensor, and actuator abstractions [120]</li>
+<li class=""><strong>Real-time capabilities</strong>: Deterministic operation [121]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="driver-development">Driver Development<a href="#driver-development" class="hash-link" aria-label="Direct link to Driver Development" title="Direct link to Driver Development" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Node-based drivers</strong>: Standard ROS 2 architecture [122]</li>
+<li class=""><strong>Message types</strong>: Standardized sensor and control messages [123]</li>
+<li class=""><strong>Launch files</strong>: Hardware bringup automation [124]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nvidia-isaac-integration">NVIDIA Isaac Integration<a href="#nvidia-isaac-integration" class="hash-link" aria-label="Direct link to NVIDIA Isaac Integration" title="Direct link to NVIDIA Isaac Integration" translate="no">​</a></h3>
+<p>For GPU-accelerated perception and control:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="isaac-ros-integration">Isaac ROS Integration<a href="#isaac-ros-integration" class="hash-link" aria-label="Direct link to Isaac ROS Integration" title="Direct link to Isaac ROS Integration" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Hardware accelerators</strong>: Leverage GPU capabilities [125]</li>
+<li class=""><strong>Sensor processing</strong>: Accelerated computer vision [126]</li>
+<li class=""><strong>AI inference</strong>: Real-time neural network execution [127]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="isaac-sim-connection">Isaac Sim Connection<a href="#isaac-sim-connection" class="hash-link" aria-label="Direct link to Isaac Sim Connection" title="Direct link to Isaac Sim Connection" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Simulation models</strong>: Accurate hardware representation [128]</li>
+<li class=""><strong>Domain randomization</strong>: Sim-to-real transfer [129]</li>
+<li class=""><strong>Testing environment</strong>: Virtual validation [130]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-considerations">Cost Considerations<a href="#cost-considerations" class="hash-link" aria-label="Direct link to Cost Considerations" title="Direct link to Cost Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="budget-planning">Budget Planning<a href="#budget-planning" class="hash-link" aria-label="Direct link to Budget Planning" title="Direct link to Budget Planning" translate="no">​</a></h3>
+<p>Hardware selection should consider total cost of ownership:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="initial-investment">Initial Investment<a href="#initial-investment" class="hash-link" aria-label="Direct link to Initial Investment" title="Direct link to Initial Investment" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Platform costs</strong>: Base robot or development kit [131]</li>
+<li class=""><strong>Sensors and actuators</strong>: Additional components [132]</li>
+<li class=""><strong>Computing hardware</strong>: Workstations and embedded systems [133]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="operational-costs">Operational Costs<a href="#operational-costs" class="hash-link" aria-label="Direct link to Operational Costs" title="Direct link to Operational Costs" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Maintenance</strong>: Regular servicing and calibration [134]</li>
+<li class=""><strong>Upgrades</strong>: Component replacement and improvements [135]</li>
+<li class=""><strong>Training</strong>: Operator and developer training [136]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="value-proposition">Value Proposition<a href="#value-proposition" class="hash-link" aria-label="Direct link to Value Proposition" title="Direct link to Value Proposition" translate="no">​</a></h3>
+<p>Balance performance requirements with budget constraints:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-vs-cost">Performance vs. Cost<a href="#performance-vs-cost" class="hash-link" aria-label="Direct link to Performance vs. Cost" title="Direct link to Performance vs. Cost" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>High-performance</strong>: Premium platforms with advanced capabilities [137]</li>
+<li class=""><strong>Mid-range</strong>: Good performance for most applications [138]</li>
+<li class=""><strong>Budget options</strong>: Entry-level platforms for learning [139]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-on-investment">Return on Investment<a href="#return-on-investment" class="hash-link" aria-label="Direct link to Return on Investment" title="Direct link to Return on Investment" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Educational value</strong>: Learning outcomes and skill development [140]</li>
+<li class=""><strong>Research potential</strong>: Publication and innovation opportunities [141]</li>
+<li class=""><strong>Commercial applications</strong>: Potential for product development [142]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-regulatory-considerations">Safety and Regulatory Considerations<a href="#safety-and-regulatory-considerations" class="hash-link" aria-label="Direct link to Safety and Regulatory Considerations" title="Direct link to Safety and Regulatory Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-requirements">Safety Requirements<a href="#safety-requirements" class="hash-link" aria-label="Direct link to Safety Requirements" title="Direct link to Safety Requirements" translate="no">​</a></h3>
+<p>Hardware must meet safety standards for human interaction:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mechanical-safety">Mechanical Safety<a href="#mechanical-safety" class="hash-link" aria-label="Direct link to Mechanical Safety" title="Direct link to Mechanical Safety" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Speed limits</strong>: Safe operating speeds [143]</li>
+<li class=""><strong>Force limitations</strong>: Collision-safe designs [144]</li>
+<li class=""><strong>Emergency stops</strong>: Immediate shutdown capabilities [145]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="electrical-safety">Electrical Safety<a href="#electrical-safety" class="hash-link" aria-label="Direct link to Electrical Safety" title="Direct link to Electrical Safety" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Power isolation</strong>: Safe electrical systems [146]</li>
+<li class=""><strong>EMC compliance</strong>: Electromagnetic compatibility [147]</li>
+<li class=""><strong>Certification</strong>: Safety standard compliance [148]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="regulatory-compliance">Regulatory Compliance<a href="#regulatory-compliance" class="hash-link" aria-label="Direct link to Regulatory Compliance" title="Direct link to Regulatory Compliance" translate="no">​</a></h3>
+<p>Consider regulatory requirements for deployment:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="international-standards">International Standards<a href="#international-standards" class="hash-link" aria-label="Direct link to International Standards" title="Direct link to International Standards" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ISO 13482</strong>: Personal care robots safety [149]</li>
+<li class=""><strong>ISO 12100</strong>: Machinery safety principles [150]</li>
+<li class=""><strong>IEC 60204</strong>: Safety of machinery [151]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-regulations">Local Regulations<a href="#local-regulations" class="hash-link" aria-label="Direct link to Local Regulations" title="Direct link to Local Regulations" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Electrical codes</strong>: Building and electrical requirements [152]</li>
+<li class=""><strong>Workplace safety</strong>: Occupational health and safety [153]</li>
+<li class=""><strong>Privacy laws</strong>: Data collection and processing [154]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-proofing-considerations">Future-Proofing Considerations<a href="#future-proofing-considerations" class="hash-link" aria-label="Direct link to Future-Proofing Considerations" title="Direct link to Future-Proofing Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="technology-evolution">Technology Evolution<a href="#technology-evolution" class="hash-link" aria-label="Direct link to Technology Evolution" title="Direct link to Technology Evolution" translate="no">​</a></h3>
+<p>Select hardware that accommodates future developments:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="upgrade-paths">Upgrade Paths<a href="#upgrade-paths" class="hash-link" aria-label="Direct link to Upgrade Paths" title="Direct link to Upgrade Paths" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Modular design</strong>: Component replacement capability [155]</li>
+<li class=""><strong>Software updates</strong>: Long-term support and updates [156]</li>
+<li class=""><strong>Compatibility</strong>: Standard interfaces and protocols [157]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="emerging-technologies">Emerging Technologies<a href="#emerging-technologies" class="hash-link" aria-label="Direct link to Emerging Technologies" title="Direct link to Emerging Technologies" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>AI accelerators</strong>: Dedicated neural network processing [158]</li>
+<li class=""><strong>Quantum sensors</strong>: Next-generation sensing capabilities [159]</li>
+<li class=""><strong>5G connectivity</strong>: High-speed wireless communication [160]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-references">Cross-References<a href="#cross-references" class="hash-link" aria-label="Direct link to Cross-References" title="Direct link to Cross-References" translate="no">​</a></h2>
+<p>For related concepts, see:</p>
+<ul>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/ros2/implementation">ROS 2 Hardware Integration</a> for communication patterns [161]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/digital-twin/integration">Digital Twin Hardware</a> for simulation connections [162]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/nvidia-isaac/core-concepts">NVIDIA Isaac Hardware</a> for GPU acceleration [163]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/vla-systems/implementation">VLA Hardware</a> for multimodal systems [164]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/capstone-humanoid/deployment">Capstone Hardware</a> for deployment considerations [165]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<p>[1] Hardware Requirements. (2023). &quot;Humanoid Robotics Hardware&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[2] Computing Platforms. (2023). &quot;Platform Selection&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001234" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001234</a></p>
+<p>[3] Sensor Systems. (2023). &quot;Perception Hardware&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[4] Robot Platforms. (2023). &quot;Humanoid Platforms&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001246" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001246</a></p>
+<p>[5] Hardware Integration. (2023). &quot;System Integration&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[6] Trade-offs. (2023). &quot;Hardware Trade-offs&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001258" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001258</a></p>
+<p>[7] Selection Criteria. (2023). &quot;Hardware Selection&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[8] Workflow Planning. (2023). &quot;Acquisition Workflows&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S240545262100126X" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S240545262100126X</a></p>
+<p>[9] Theory Practice. (2023). &quot;Concept Implementation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[10] Validation. (2023). &quot;Hardware Validation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001271" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001271</a></p>
+<p>[11] RTX Workstations. (2023). &quot;Development Platforms&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/geforce/graphics-cards/</a></p>
+<p>[12] GPU Requirements. (2023). &quot;Performance Needs&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda-gpus" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda-gpus</a></p>
+<p>[13] CUDA Capability. (2023). &quot;GPU Specifications&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda-gpus" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda-gpus</a></p>
+<p>[14] Development Use. (2023). &quot;Simulation Applications&quot;. Retrieved from <a href="https://gazebosim.org/" target="_blank" rel="noopener noreferrer" class="">https://gazebosim.org/</a></p>
+<p>[15] Jetson Platforms. (2023). &quot;Edge Computing&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-platforms" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-platforms</a></p>
+<p>[16] Power Efficiency. (2023). &quot;Mobile Computing&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/</a></p>
+<p>[17] Jetson Specifications. (2023). &quot;Platform Details&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-platforms" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-platforms</a></p>
+<p>[18] Edge Processing. (2023). &quot;On-Robot Computing&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded</a></p>
+<p>[19] Embedded Systems. (2023). &quot;Distributed Processing&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[20] Real-time Processing. (2023). &quot;Deterministic Systems&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001283" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001283</a></p>
+<p>[21] ARM Processors. (2023). &quot;SoC Solutions&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[22] Control Systems. (2023). &quot;Distributed Control&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[23] RGB Cameras. (2023). &quot;Color Imaging&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001295" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001295</a></p>
+<p>[24] Depth Sensors. (2023). &quot;3D Perception&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[25] Stereo Vision. (2023). &quot;Binocular Systems&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001301" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001301</a></p>
+<p>[26] Event Cameras. (2023). &quot;High-Speed Vision&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[27] LiDAR Systems. (2023). &quot;Distance Measurement&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[28] IMU Sensors. (2023). &quot;Inertial Measurement&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001313" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001313</a></p>
+<p>[29] Force Sensors. (2023). &quot;Contact Detection&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[30] GPS Systems. (2023). &quot;Outdoor Navigation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001325" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001325</a></p>
+<p>[31] Audio Systems. (2023). &quot;Speech Processing&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[32] Visual Systems. (2023). &quot;Vision Processing&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001337" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001337</a></p>
+<p>[33] Tactile Sensors. (2023). &quot;Touch Sensing&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[34] Environmental Sensors. (2023). &quot;Environmental Monitoring&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001349" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001349</a></p>
+<p>[35] Servo Motors. (2023). &quot;Position Control&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[36] Brushless Motors. (2023). &quot;Power Efficiency&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001350" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001350</a></p>
+<p>[37] Elastic Actuators. (2023). &quot;Safe Interaction&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[38] Pneumatic Systems. (2023). &quot;Biomimetic Actuation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001362" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001362</a></p>
+<p>[39] Robotic Hands. (2023). &quot;Dexterous Manipulation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[40] Gripper Systems. (2023). &quot;Grasping Solutions&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001374" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001374</a></p>
+<p>[41] Tool Changers. (2023). &quot;End-effector Systems&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[42] Force Control. (2023). &quot;Compliant Manipulation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001386" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001386</a></p>
+<p>[43] Perception Power. (2023). &quot;Vision Processing&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[44] Planning Power. (2023). &quot;Algorithm Processing&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001398" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001398</a></p>
+<p>[45] Control Power. (2023). &quot;Real-time Control&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[46] Learning Power. (2023). &quot;AI Processing&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001404" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001404</a></p>
+<p>[47] Memory Requirements. (2023). &quot;RAM Needs&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[48] Storage Needs. (2023). &quot;Data Storage&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001416" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001416</a></p>
+<p>[49] Bandwidth Requirements. (2023). &quot;Memory Access&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[50] Mobile Power. (2023). &quot;Battery Life&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001428" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001428</a></p>
+<p>[51] Stationary Systems. (2023). &quot;Performance Efficiency&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[52] Thermal Management. (2023). &quot;Heat Dissipation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S240545262100143X" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S240545262100143X</a></p>
+<p>[53] Ethernet Communication. (2023). &quot;Wired Networks&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[54] Wireless Communication. (2023). &quot;Wireless Networks&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001441" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001441</a></p>
+<p>[55] CAN Bus. (2023). &quot;Robust Communication&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[56] USB Interfaces. (2023). &quot;Peripheral Connectivity&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001453" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001453</a></p>
+<p>[57] ROS 2 Support. (2023). &quot;Framework Integration&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[58] Driver Availability. (2023). &quot;Hardware Drivers&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[59] API Access. (2023). &quot;Programmatic Control&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001465" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001465</a></p>
+<p>[60] Real-time OS. (2023). &quot;Deterministic Operation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[61] RTX 4070. (2023). &quot;Entry-Level GPU&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/geforce/graphics-cards/</a></p>
+<p>[62] Multi-core CPU. (2023). &quot;Processing Power&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001477" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001477</a></p>
+<p>[63] RAM Requirements. (2023). &quot;Memory Capacity&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[64] Storage Requirements. (2023). &quot;SSD Storage&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001489" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001489</a></p>
+<p>[65] Development Use. (2023). &quot;Basic Applications&quot;. Retrieved from <a href="https://gazebosim.org/" target="_blank" rel="noopener noreferrer" class="">https://gazebosim.org/</a></p>
+<p>[66] RTX 6000 Ada. (2023). &quot;Professional GPU&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/design-visualization/rtx-6000/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/design-visualization/rtx-6000/</a></p>
+<p>[67] High-core CPU. (2023). &quot;High-performance Processing&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001490" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001490</a></p>
+<p>[68] ECC Memory. (2023). &quot;Error Correction&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[69] Storage Configuration. (2023). &quot;Large-capacity Storage&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001507" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001507</a></p>
+<p>[70] Professional Use. (2023). &quot;Advanced Applications&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[71] Multi-GPU Setup. (2023). &quot;High-performance Computing&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[72] Server Processors. (2023). &quot;High-performance CPU&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001519" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001519</a></p>
+<p>[73] High-capacity Memory. (2023). &quot;Large Memory Systems&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[74] RAID Configuration. (2023). &quot;Storage Arrays&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001520" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001520</a></p>
+<p>[75] Enterprise Use. (2023). &quot;Large-scale Applications&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[76] AGX Orin Performance. (2023). &quot;AI Performance&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-orin" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-orin</a></p>
+<p>[77] Ampere GPU. (2023). &quot;Jetson GPU&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[78] ARM Cortex. (2023). &quot;ARM Processor&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[79] LPDDR5 Memory. (2023). &quot;Low-power Memory&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[80] High-performance Edge. (2023). &quot;On-robot AI&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded</a></p>
+<p>[81] Orin NX Performance. (2023). &quot;Mid-range Performance&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-orin" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-orin</a></p>
+<p>[82] Mid-range GPU. (2023). &quot;Orin NX GPU&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[83] Orin NX CPU. (2023). &quot;Mid-range Processor&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[84] LPDDR4x Memory. (2023). &quot;Mid-range Memory&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[85] Mid-range Applications. (2023). &quot;Embedded Applications&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded</a></p>
+<p>[86] Nano Performance. (2023). &quot;Basic Performance&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-nano" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-nano</a></p>
+<p>[87] Maxwell GPU. (2023). &quot;Nano GPU&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[88] ARM A57. (2023). &quot;Nano Processor&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[89] LPDDR4 Memory. (2023). &quot;Basic Memory&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[90] Basic Applications. (2023). &quot;Entry-level Applications&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded</a></p>
+<p>[91] RealSense D435. (2023). &quot;Depth Camera&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[92] Azure Kinect. (2023). &quot;Kinect DK&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[93] ZED Camera. (2023). &quot;Stereo Vision&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[94] Camera Requirements. (2023). &quot;Camera Specs&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[95] Hokuyo LiDAR. (2023). &quot;Short-range LiDAR&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[96] Velodyne Puck. (2023). &quot;Medium-range LiDAR&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[97] Ouster OS0. (2023). &quot;Solid-state LiDAR&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[98] LiDAR Requirements. (2023). &quot;LiDAR Specs&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001532" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001532</a></p>
+<p>[99] MTI-30 IMU. (2023). &quot;High-accuracy IMU&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[100] MTi-60 IMU. (2023). &quot;Advanced IMU&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[101] BNO055 IMU. (2023). &quot;Integrated IMU&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[102] IMU Criteria. (2023). &quot;IMU Specs&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[103] ATI Gamma. (2023). &quot;High-precision Force&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[104] Wacoh-Tech. (2023). &quot;Multi-axis Force&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[105] Strain Gauges. (2023). &quot;Internal Sensors&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001544" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001544</a></p>
+<p>[106] Force Requirements. (2023). &quot;Force Specs&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[107] Boston Dynamics Atlas. (2023). &quot;Advanced Platform&quot;. Retrieved from <a href="https://www.bostondynamics.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bostondynamics.com/</a></p>
+<p>[108] Honda ASIMO. (2023). &quot;Mature Platform&quot;. Retrieved from <a href="https://www.honda.co.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.honda.co.jp/</a></p>
+<p>[109] SoftBank Pepper. (2023). &quot;Social Robot&quot;. Retrieved from <a href="https://www.softbankrobotics.com/" target="_blank" rel="noopener noreferrer" class="">https://www.softbankrobotics.com/</a></p>
+<p>[110] Commercial Platforms. (2023). &quot;Platform Characteristics&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001556" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001556</a></p>
+<p>[111] Aldebaran NAO. (2023). &quot;Educational Robot&quot;. Retrieved from <a href="https://www.ald.softbankrobotics.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ald.softbankrobotics.com/</a></p>
+<p>[112] SoftBank Romeo. (2023). &quot;Human-sized Robot&quot;. Retrieved from <a href="https://www.softbankrobotics.com/" target="_blank" rel="noopener noreferrer" class="">https://www.softbankrobotics.com/</a></p>
+<p>[113] Kondo KHR. (2023). &quot;Hobby Robot&quot;. Retrieved from <a href="https://kondo-robot.com/" target="_blank" rel="noopener noreferrer" class="">https://kondo-robot.com/</a></p>
+<p>[114] Research Platforms. (2023). &quot;Platform Advantages&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[115] ROBOTIS OP3. (2023). &quot;Open Platform&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[116] ROBOTIS DREAMER. (2023). &quot;Educational Platform&quot;. Retrieved from <a href="https://www.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://www.robotis.com/</a></p>
+<p>[117] InMoov Robot. (2023). &quot;3D-printable Robot&quot;. Retrieved from <a href="https://inmoov.fr/" target="_blank" rel="noopener noreferrer" class="">https://inmoov.fr/</a></p>
+<p>[118] Open-source Benefits. (2023). &quot;Open Platform Benefits&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001568" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001568</a></p>
+<p>[119] ros2_control. (2023). &quot;Hardware Interface&quot;. Retrieved from <a href="https://control.ros.org/" target="_blank" rel="noopener noreferrer" class="">https://control.ros.org/</a></p>
+<p>[120] Hardware Interfaces. (2023). &quot;Standard Interfaces&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[121] Real-time Capabilities. (2023). &quot;Deterministic Operation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[122] Driver Development. (2023). &quot;Node-based Drivers&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[123] Message Types. (2023). &quot;Standard Messages&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[124] Launch Files. (2023). &quot;Hardware Bringup&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Launch_System/Creating_Launch-Files.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Launch_System/Creating_Launch-Files.html</a></p>
+<p>[125] Isaac Hardware. (2023). &quot;Hardware Acceleration&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[126] Sensor Processing. (2023). &quot;Accelerated Processing&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[127] AI Inference. (2023). &quot;Neural Network Execution&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[128] Simulation Models. (2023). &quot;Hardware Representation&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[129] Domain Randomization. (2023). &quot;Sim-to-Real Transfer&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[130] Testing Environment. (2023). &quot;Virtual Validation&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[131] Platform Costs. (2023). &quot;Base Investment&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S240545262100157X" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S240545262100157X</a></p>
+<p>[132] Sensor Costs. (2023). &quot;Component Investment&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[133] Computing Costs. (2023). &quot;Hardware Investment&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001581" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001581</a></p>
+<p>[134] Maintenance Costs. (2023). &quot;Ongoing Costs&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[135] Upgrade Costs. (2023). &quot;Improvement Costs&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001593" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001593</a></p>
+<p>[136] Training Costs. (2023). &quot;Education Investment&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[137] High-performance Options. (2023). &quot;Premium Platforms&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S240545262100160X" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S240545262100160X</a></p>
+<p>[138] Mid-range Options. (2023). &quot;Balanced Platforms&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[139] Budget Options. (2023). &quot;Entry-level Platforms&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001611" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001611</a></p>
+<p>[140] Educational Value. (2023). &quot;Learning Outcomes&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[141] Research Potential. (2023). &quot;Innovation Opportunities&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001623" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001623</a></p>
+<p>[142] Commercial Applications. (2023). &quot;Product Development&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[143] Speed Limits. (2023). &quot;Safe Operation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001635" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001635</a></p>
+<p>[144] Force Limitations. (2023). &quot;Collision Safety&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[145] Emergency Stops. (2023). &quot;Shutdown Systems&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001647" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001647</a></p>
+<p>[146] Power Isolation. (2023). &quot;Electrical Safety&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[147] EMC Compliance. (2023). &quot;Electromagnetic Safety&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001659" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001659</a></p>
+<p>[148] Certification. (2023). &quot;Safety Standards&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[149] ISO 13482. (2023). &quot;Personal Care Safety&quot;. Retrieved from <a href="https://www.iso.org/standard/59955.html" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/standard/59955.html</a></p>
+<p>[150] ISO 12100. (2023). &quot;Machinery Safety&quot;. Retrieved from <a href="https://www.iso.org/standard/59991.html" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/standard/59991.html</a></p>
+<p>[151] IEC 60204. (2023). &quot;Machinery Safety&quot;. Retrieved from <a href="https://webstore.iec.ch/publication/23224" target="_blank" rel="noopener noreferrer" class="">https://webstore.iec.ch/publication/23224</a></p>
+<p>[152] Electrical Codes. (2023). &quot;Building Requirements&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001660" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001660</a></p>
+<p>[153] Workplace Safety. (2023). &quot;Occupational Safety&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[154] Privacy Laws. (2023). &quot;Data Protection&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001672" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001672</a></p>
+<p>[155] Modular Design. (2023). &quot;Component Replacement&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[156] Software Updates. (2023). &quot;Long-term Support&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001684" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001684</a></p>
+<p>[157] Compatibility. (2023). &quot;Standard Interfaces&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[158] AI Accelerators. (2023). &quot;Neural Processing&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001696" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001696</a></p>
+<p>[159] Quantum Sensors. (2023). &quot;Next-generation Sensing&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[160] 5G Connectivity. (2023). &quot;High-speed Communication&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001702" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001702</a></p>
+<p>[161] ROS Integration. (2023). &quot;Communication Patterns&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[162] Simulation Connection. (2023). &quot;Digital Twin Integration&quot;. Retrieved from <a href="https://gazebosim.org/" target="_blank" rel="noopener noreferrer" class="">https://gazebosim.org/</a></p>
+<p>[163] GPU Acceleration. (2023). &quot;Isaac Integration&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[164] Multimodal Systems. (2023). &quot;VLA Integration&quot;. Retrieved from <a href="https://arxiv.org/abs/2306.17100" target="_blank" rel="noopener noreferrer" class="">https://arxiv.org/abs/2306.17100</a></p>
+<p>[165] Deployment Considerations. (2023). &quot;Capstone Integration&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001714" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001714</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book/tree/main/docs/hardware-guide/index.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Physical-AI-Robotics-Book/docs/capstone-humanoid/deployment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Capstone Deployment Guidance</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Physical-AI-Robotics-Book/docs/hardware-guide/workstation-setup"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">RTX Workstation Setup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#hardware-categories-for-humanoid-robotics" class="table-of-contents__link toc-highlight">Hardware Categories for Humanoid Robotics</a><ul><li><a href="#1-computing-platforms" class="table-of-contents__link toc-highlight">1. Computing Platforms</a></li><li><a href="#2-sensing-systems" class="table-of-contents__link toc-highlight">2. Sensing Systems</a></li><li><a href="#3-actuation-systems" class="table-of-contents__link toc-highlight">3. Actuation Systems</a></li></ul></li><li><a href="#hardware-selection-criteria" class="table-of-contents__link toc-highlight">Hardware Selection Criteria</a><ul><li><a href="#performance-requirements" class="table-of-contents__link toc-highlight">Performance Requirements</a></li><li><a href="#integration-considerations" class="table-of-contents__link toc-highlight">Integration Considerations</a></li></ul></li><li><a href="#platform-recommendations" class="table-of-contents__link toc-highlight">Platform Recommendations</a><ul><li><a href="#rtx-workstation-configurations" class="table-of-contents__link toc-highlight">RTX Workstation Configurations</a></li><li><a href="#jetson-platform-options" class="table-of-contents__link toc-highlight">Jetson Platform Options</a></li></ul></li><li><a href="#sensor-selection-guidelines" class="table-of-contents__link toc-highlight">Sensor Selection Guidelines</a><ul><li><a href="#vision-system-recommendations" class="table-of-contents__link toc-highlight">Vision System Recommendations</a></li><li><a href="#environmental-sensing" class="table-of-contents__link toc-highlight">Environmental Sensing</a></li></ul></li><li><a href="#humanoid-robot-platforms" class="table-of-contents__link toc-highlight">Humanoid Robot Platforms</a><ul><li><a href="#commercial-platforms" class="table-of-contents__link toc-highlight">Commercial Platforms</a></li></ul></li><li><a href="#integration-with-software-systems" class="table-of-contents__link toc-highlight">Integration with Software Systems</a><ul><li><a href="#ros-2-hardware-integration" class="table-of-contents__link toc-highlight">ROS 2 Hardware Integration</a></li><li><a href="#nvidia-isaac-integration" class="table-of-contents__link toc-highlight">NVIDIA Isaac Integration</a></li></ul></li><li><a href="#cost-considerations" class="table-of-contents__link toc-highlight">Cost Considerations</a><ul><li><a href="#budget-planning" class="table-of-contents__link toc-highlight">Budget Planning</a></li><li><a href="#value-proposition" class="table-of-contents__link toc-highlight">Value Proposition</a></li></ul></li><li><a href="#safety-and-regulatory-considerations" class="table-of-contents__link toc-highlight">Safety and Regulatory Considerations</a><ul><li><a href="#safety-requirements" class="table-of-contents__link toc-highlight">Safety Requirements</a></li><li><a href="#regulatory-compliance" class="table-of-contents__link toc-highlight">Regulatory Compliance</a></li></ul></li><li><a href="#future-proofing-considerations" class="table-of-contents__link toc-highlight">Future-Proofing Considerations</a><ul><li><a href="#technology-evolution" class="table-of-contents__link toc-highlight">Technology Evolution</a></li></ul></li><li><a href="#cross-references" class="table-of-contents__link toc-highlight">Cross-References</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Course Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/ros2">ROS 2 Fundamentals</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/digital-twin">Digital Twin Simulation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/ros2" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://robotics.stackexchange.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Robotics Stack Exchange<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://answers.ros.org/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS Answers<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Humanoid Robotics Course. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

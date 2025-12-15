@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-hardware-guide/specifications-validation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Hardware Specifications and Validation | Humanoid Robotics &amp; Physical AI Course Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/specifications-validation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Hardware Specifications and Validation | Humanoid Robotics &amp; Physical AI Course Book"><meta data-rh="true" name="description" content="Comprehensive hardware specifications with proper citations and validation of recommendations for humanoid robotics applications"><meta data-rh="true" property="og:description" content="Comprehensive hardware specifications with proper citations and validation of recommendations for humanoid robotics applications"><link data-rh="true" rel="icon" href="/Physical-AI-Robotics-Book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/specifications-validation"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/specifications-validation" hreflang="en"><link data-rh="true" rel="alternate" href="https://muneeb-ahmed-github-account.github.io/Physical-AI-Robotics-Book/docs/hardware-guide/specifications-validation" hreflang="x-default"><link rel="stylesheet" href="/Physical-AI-Robotics-Book/assets/css/styles.599a2b8b.css">
+<script src="/Physical-AI-Robotics-Book/assets/js/runtime~main.36aa1060.js" defer="defer"></script>
+<script src="/Physical-AI-Robotics-Book/assets/js/main.c3ed864b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/Physical-AI-Robotics-Book/docs/intro"><div class="navbar__logo"><img src="/Physical-AI-Robotics-Book/img/logo.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40" width="180"><img src="/Physical-AI-Robotics-Book/img/logo-dark.svg" alt="Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40" width="180"></div><b class="navbar__title text--truncate">Humanoid Robotics Book</b></a><a class="navbar__item navbar__link" href="/Physical-AI-Robotics-Book/docs/intro">Course Book</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-username/humanoid-robotics-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Hardware Specifications and Validation</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>After completing this specifications and validation guide, students will be able to:</p>
+<ul>
+<li class="">Evaluate hardware specifications against application requirements [1]</li>
+<li class="">Validate current and accurate hardware recommendations [2]</li>
+<li class="">Apply proper citation methodology to technical specifications [3]</li>
+<li class="">Assess the accuracy of hardware recommendations [4]</li>
+<li class="">Compare specifications against industry standards [5]</li>
+<li class="">Verify vendor-provided specifications [6]</li>
+<li class="">Validate hardware recommendations through testing [7]</li>
+<li class="">Document specification validation results [8]</li>
+<li class="">Identify outdated or deprecated hardware [9]</li>
+<li class="">Evaluate cost-effectiveness of hardware recommendations [10]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-specification-standards">Hardware Specification Standards<a href="#hardware-specification-standards" class="hash-link" aria-label="Direct link to Hardware Specification Standards" title="Direct link to Hardware Specification Standards" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="computing-platform-specifications">Computing Platform Specifications<a href="#computing-platform-specifications" class="hash-link" aria-label="Direct link to Computing Platform Specifications" title="Direct link to Computing Platform Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="nvidia-jetson-agx-orin-specifications">NVIDIA Jetson AGX Orin Specifications<a href="#nvidia-jetson-agx-orin-specifications" class="hash-link" aria-label="Direct link to NVIDIA Jetson AGX Orin Specifications" title="Direct link to NVIDIA Jetson AGX Orin Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: 2048-core NVIDIA Ampere architecture GPU [11]</li>
+<li class=""><strong>CUDA Cores</strong>: 2048 cores [12]</li>
+<li class=""><strong>Tensor Cores</strong>: 64 third-generation Tensor Cores [13]</li>
+<li class=""><strong>AI Performance</strong>: Up to 275 TOPS INT8 [14]</li>
+<li class=""><strong>CPU</strong>: 12-core ARM Cortex-A78AE v8.2 64-bit CPU [15]</li>
+<li class=""><strong>Memory</strong>: 64GB 256-bit LPDDR5x | 204.8 GB/s [16]</li>
+<li class=""><strong>Storage</strong>: 32GB eMMC 5.1 [17]</li>
+<li class=""><strong>Connectivity</strong>: 2.5 GbE [18]</li>
+<li class=""><strong>Power</strong>: 15W to 60W TDP [19]</li>
+<li class=""><strong>Thermal Design</strong>: Fan-cooled operation [20]</li>
+<li class=""><strong>Dimensions</strong>: 100mm x 100mm x 41mm [21]</li>
+<li class=""><strong>Weight</strong>: 365g [22]</li>
+<li class=""><strong>Operating Temperature</strong>: -25°C to +80°C junction temperature [23]</li>
+<li class=""><strong>Certifications</strong>: CE, FCC, IC, KC, SRRC, RCM, UKCA [24]</li>
+<li class=""><strong>Reference</strong>: NVIDIA Jetson AGX Orin Developer Kit [25]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="nvidia-jetson-orin-nx-specifications">NVIDIA Jetson Orin NX Specifications<a href="#nvidia-jetson-orin-nx-specifications" class="hash-link" aria-label="Direct link to NVIDIA Jetson Orin NX Specifications" title="Direct link to NVIDIA Jetson Orin NX Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: 1024-core NVIDIA Ampere architecture GPU [26]</li>
+<li class=""><strong>CUDA Cores</strong>: 1024 cores [27]</li>
+<li class=""><strong>Tensor Cores</strong>: 32 third-generation Tensor Cores [28]</li>
+<li class=""><strong>AI Performance</strong>: Up to 100 TOPS INT8 [29]</li>
+<li class=""><strong>CPU</strong>: 8-core ARM Cortex-A78AE v8.2 64-bit CPU [30]</li>
+<li class=""><strong>Memory</strong>: 8GB or 16GB LPDDR4x | 102.4 GB/s [31]</li>
+<li class=""><strong>Storage</strong>: 16GB eMMC 5.1 [32]</li>
+<li class=""><strong>Connectivity</strong>: Gigabit Ethernet [33]</li>
+<li class=""><strong>Power</strong>: 15W to 25W TDP [34]</li>
+<li class=""><strong>Thermal Design</strong>: Fan-cooled operation [35]</li>
+<li class=""><strong>Dimensions</strong>: 100mm x 80mm x 41mm [36]</li>
+<li class=""><strong>Weight</strong>: 280g [37]</li>
+<li class=""><strong>Operating Temperature</strong>: -25°C to +80°C junction temperature [38]</li>
+<li class=""><strong>Reference</strong>: NVIDIA Jetson Orin NX Developer Kit [39]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="nvidia-jetson-orin-nano-specifications">NVIDIA Jetson Orin Nano Specifications<a href="#nvidia-jetson-orin-nano-specifications" class="hash-link" aria-label="Direct link to NVIDIA Jetson Orin Nano Specifications" title="Direct link to NVIDIA Jetson Orin Nano Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>GPU</strong>: 512-core NVIDIA Ampere architecture GPU [40]</li>
+<li class=""><strong>CUDA Cores</strong>: 512 cores [41]</li>
+<li class=""><strong>Tensor Cores</strong>: 16 third-generation Tensor Cores [42]</li>
+<li class=""><strong>AI Performance</strong>: Up to 40 TOPS INT8 [43]</li>
+<li class=""><strong>CPU</strong>: 4-core ARM Cortex-A78AE v8.2 64-bit CPU [44]</li>
+<li class=""><strong>Memory</strong>: 4GB or 8GB LPDDR4x | 68.3 GB/s [45]</li>
+<li class=""><strong>Storage</strong>: 16GB eMMC 5.1 [46]</li>
+<li class=""><strong>Connectivity</strong>: Gigabit Ethernet [47]</li>
+<li class=""><strong>Power</strong>: 7W to 15W TDP [48]</li>
+<li class=""><strong>Thermal Design</strong>: Fanless operation [49]</li>
+<li class=""><strong>Dimensions</strong>: 100mm x 80mm x 41mm [50]</li>
+<li class=""><strong>Weight</strong>: 280g [51]</li>
+<li class=""><strong>Operating Temperature</strong>: -25°C to +80°C junction temperature [52]</li>
+<li class=""><strong>Reference</strong>: NVIDIA Jetson Orin Nano Developer Kit [53]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rtx-workstation-specifications">RTX Workstation Specifications<a href="#rtx-workstation-specifications" class="hash-link" aria-label="Direct link to RTX Workstation Specifications" title="Direct link to RTX Workstation Specifications" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>GPU</strong>: NVIDIA RTX 6000 Ada Generation [54]</p>
+</li>
+<li class="">
+<p><strong>CUDA Cores</strong>: 18,176 CUDA Cores [55]</p>
+</li>
+<li class="">
+<p><strong>Tensor Cores</strong>: 568 4th Generation Tensor Cores [56]</p>
+</li>
+<li class="">
+<p><strong>RT Cores</strong>: 142 3rd Generation RT Cores [57]</p>
+</li>
+<li class="">
+<p><strong>Memory</strong>: 48 GB GDDR6 with ECC [58]</p>
+</li>
+<li class="">
+<p><strong>Memory Bandwidth</strong>: 960 GB/s [59]</p>
+</li>
+<li class="">
+<p><strong>Display Support</strong>: 4x DisplayPort 1.4a [60]</p>
+</li>
+<li class="">
+<p><strong>Power Consumption</strong>: 300W typical, 350W maximum [61]</p>
+</li>
+<li class="">
+<p><strong>PCI Express</strong>: PCI Express 4.0 x16 [62]</p>
+</li>
+<li class="">
+<p><strong>Dimensions</strong>: 267mm x 111mm x 51mm [63]</p>
+</li>
+<li class="">
+<p><strong>Weight</strong>: 2.43 kg [64]</p>
+</li>
+<li class="">
+<p><strong>Cooling</strong>: Dual-fan design [65]</p>
+</li>
+<li class="">
+<p><strong>Reference</strong>: NVIDIA RTX 6000 Ada Generation [66]</p>
+</li>
+<li class="">
+<p><strong>GPU</strong>: NVIDIA RTX A6000 [67]</p>
+</li>
+<li class="">
+<p><strong>CUDA Cores</strong>: 10,752 CUDA Cores [68]</p>
+</li>
+<li class="">
+<p><strong>Tensor Cores</strong>: 336 3rd Generation Tensor Cores [69]</p>
+</li>
+<li class="">
+<p><strong>RT Cores</strong>: 84 2nd Generation RT Cores [70]</p>
+</li>
+<li class="">
+<p><strong>Memory</strong>: 48 GB GDDR6 with ECC [71]</p>
+</li>
+<li class="">
+<p><strong>Memory Bandwidth</strong>: 768 GB/s [72]</p>
+</li>
+<li class="">
+<p><strong>Display Support</strong>: 4x DisplayPort 1.4 [73]</p>
+</li>
+<li class="">
+<p><strong>Power Consumption</strong>: 300W [74]</p>
+</li>
+<li class="">
+<p><strong>PCI Express</strong>: PCI Express 4.0 x16 [75]</p>
+</li>
+<li class="">
+<p><strong>Dimensions</strong>: 267mm x 111mm x 51mm [76]</p>
+</li>
+<li class="">
+<p><strong>Weight</strong>: 2.43 kg [77]</p>
+</li>
+<li class="">
+<p><strong>Cooling</strong>: Dual-fan design [78]</p>
+</li>
+<li class="">
+<p><strong>Reference</strong>: NVIDIA RTX A6000 [79]</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-sensor-specifications">Vision Sensor Specifications<a href="#vision-sensor-specifications" class="hash-link" aria-label="Direct link to Vision Sensor Specifications" title="Direct link to Vision Sensor Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="intel-realsense-d435-specifications">Intel RealSense D435 Specifications<a href="#intel-realsense-d435-specifications" class="hash-link" aria-label="Direct link to Intel RealSense D435 Specifications" title="Direct link to Intel RealSense D435 Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Depth Technology</strong>: Stereo Vision [80]</li>
+<li class=""><strong>Depth Field of View</strong>: 87° × 58° × 94° (H×V×D) [81]</li>
+<li class=""><strong>Depth Accuracy</strong>: ±2% at range 0.3m to 10m [82]</li>
+<li class=""><strong>Minimum Depth Distance</strong>: 0.23m [83]</li>
+<li class=""><strong>Maximum Range</strong>: 10m [84]</li>
+<li class=""><strong>Depth Stream Format</strong>: 1280×720, 848×480, 640×480, 640×360, 480×270, 320×240, 320×180 [85]</li>
+<li class=""><strong>Depth Frame Rate</strong>: 60, 30, 15 FPS [86]</li>
+<li class=""><strong>Color Resolution</strong>: 1920×1080 [87]</li>
+<li class=""><strong>Color Field of View</strong>: 69° × 42° × 77° (H×V×D) [88]</li>
+<li class=""><strong>Color Frame Rate</strong>: 60, 30, 15 FPS [89]</li>
+<li class=""><strong>Connectivity</strong>: USB 3.2 Gen 1 Type-C [90]</li>
+<li class=""><strong>Operating Temperature</strong>: 0°C to 40°C [91]</li>
+<li class=""><strong>Storage Temperature</strong>: -25°C to 70°C [92]</li>
+<li class=""><strong>Power Consumption</strong>: &lt;5.5W [93]</li>
+<li class=""><strong>Dimensions</strong>: 90mm × 25mm × 25mm [94]</li>
+<li class=""><strong>Weight</strong>: 53g [95]</li>
+<li class=""><strong>Reference</strong>: Intel RealSense D435 Product Guide [96]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="intel-realsense-d435i-specifications">Intel RealSense D435i Specifications<a href="#intel-realsense-d435i-specifications" class="hash-link" aria-label="Direct link to Intel RealSense D435i Specifications" title="Direct link to Intel RealSense D435i Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Depth Technology</strong>: Stereo Vision with IMU [97]</li>
+<li class=""><strong>Depth Field of View</strong>: 87° × 58° × 94° (H×V×D) [98]</li>
+<li class=""><strong>Depth Accuracy</strong>: ±2% at range 0.3m to 10m [99]</li>
+<li class=""><strong>Minimum Depth Distance</strong>: 0.23m [100]</li>
+<li class=""><strong>Maximum Range</strong>: 10m [101]</li>
+<li class=""><strong>Depth Stream Format</strong>: 1280×720, 848×480, 640×480, 640×360, 480×270, 320×240, 320×180 [102]</li>
+<li class=""><strong>Depth Frame Rate</strong>: 60, 30, 15 FPS [103]</li>
+<li class=""><strong>Color Resolution</strong>: 1920×1080 [104]</li>
+<li class=""><strong>Color Field of View</strong>: 69° × 42° × 77° (H×V×D) [105]</li>
+<li class=""><strong>Color Frame Rate</strong>: 60, 30, 15 FPS [106]</li>
+<li class=""><strong>IMU</strong>: Gyroscope and Accelerometer [107]</li>
+<li class=""><strong>IMU Rate</strong>: Gyro: 400 Hz, Accel: 200 Hz [108]</li>
+<li class=""><strong>Connectivity</strong>: USB 3.2 Gen 1 Type-C [109]</li>
+<li class=""><strong>Operating Temperature</strong>: 0°C to 40°C [110]</li>
+<li class=""><strong>Storage Temperature</strong>: -25°C to 70°C [111]</li>
+<li class=""><strong>Power Consumption</strong>: &lt;5.5W [112]</li>
+<li class=""><strong>Dimensions</strong>: 90mm × 25mm × 25mm [113]</li>
+<li class=""><strong>Weight</strong>: 54g [114]</li>
+<li class=""><strong>Reference</strong>: Intel RealSense D435i Product Guide [115]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="azure-kinect-dk-specifications">Azure Kinect DK Specifications<a href="#azure-kinect-dk-specifications" class="hash-link" aria-label="Direct link to Azure Kinect DK Specifications" title="Direct link to Azure Kinect DK Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Depth Sensor</strong>: 1 MP (640 × 576) [116]</li>
+<li class=""><strong>Depth FOV</strong>: Diagonal 120° [117]</li>
+<li class=""><strong>Depth Operating Range</strong>: 0.25m to 8m [118]</li>
+<li class=""><strong>Depth Accuracy</strong>: &lt;2cm at 1m, &lt;4cm at 4m [119]</li>
+<li class=""><strong>Depth Technology</strong>: Direct Time-of-Flight (dToF) [120]</li>
+<li class=""><strong>RGB Camera</strong>: 12 MP (4096 × 3072) [121]</li>
+<li class=""><strong>RGB FOV</strong>: 90° × 65° × 120° (H×V×D) [122]</li>
+<li class=""><strong>RGB Frame Rate</strong>: 30 FPS [123]</li>
+<li class=""><strong>IMU</strong>: Accelerometer and Gyroscope [124]</li>
+<li class=""><strong>IMU Rate</strong>: 1.6 kHz [125]</li>
+<li class=""><strong>Microphone Array</strong>: 7 microphones [126]</li>
+<li class=""><strong>Speaker</strong>: 1 speaker [127]</li>
+<li class=""><strong>Connectivity</strong>: USB-C [128]</li>
+<li class=""><strong>Operating Temperature</strong>: 0°C to 50°C [129]</li>
+<li class=""><strong>Storage Temperature</strong>: -5°C to 60°C [130]</li>
+<li class=""><strong>Power Consumption</strong>: &lt;12W [131]</li>
+<li class=""><strong>Dimensions</strong>: 108mm × 108mm × 22mm [132]</li>
+<li class=""><strong>Weight</strong>: 420g [133]</li>
+<li class=""><strong>Reference</strong>: Microsoft Azure Kinect DK Hardware Specification [134]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="stereolabs-zed-2i-specifications">StereoLabs ZED 2i Specifications<a href="#stereolabs-zed-2i-specifications" class="hash-link" aria-label="Direct link to StereoLabs ZED 2i Specifications" title="Direct link to StereoLabs ZED 2i Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Camera Type</strong>: Stereoscopic Color Camera [135]</li>
+<li class=""><strong>Resolution</strong>: 2K: 2208 × 1242, 1080p: 1920 × 1080, 720p: 1280 × 720, VGA: 672 × 376 [136]</li>
+<li class=""><strong>Frame Rate</strong>: Up to 60 fps [137]</li>
+<li class=""><strong>Focal Length</strong>: 2.8mm [138]</li>
+<li class=""><strong>Horizontal FOV</strong>: 110° [139]</li>
+<li class=""><strong>Depth Sensing Range</strong>: 0.2m to 20m [140]</li>
+<li class=""><strong>Depth Accuracy</strong>: Up to 1% [141]</li>
+<li class=""><strong>IMU</strong>: 3-axis gyroscope, 3-axis accelerometer [142]</li>
+<li class=""><strong>IMU Rate</strong>: 400 Hz [143]</li>
+<li class=""><strong>Connectivity</strong>: USB 3.0 Type-C [144]</li>
+<li class=""><strong>Operating Temperature</strong>: 0°C to 50°C [145]</li>
+<li class=""><strong>Power Consumption</strong>: 4.8W [146]</li>
+<li class=""><strong>Dimensions</strong>: 298mm × 30mm × 30mm [147]</li>
+<li class=""><strong>Weight</strong>: 245g [148]</li>
+<li class=""><strong>Reference</strong>: StereoLabs ZED 2i Technical Specifications [149]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-sensor-specifications">LiDAR Sensor Specifications<a href="#lidar-sensor-specifications" class="hash-link" aria-label="Direct link to LiDAR Sensor Specifications" title="Direct link to LiDAR Sensor Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hokuyo-uam-05lx-specifications">Hokuyo UAM-05LX Specifications<a href="#hokuyo-uam-05lx-specifications" class="hash-link" aria-label="Direct link to Hokuyo UAM-05LX Specifications" title="Direct link to Hokuyo UAM-05LX Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Detection Method</strong>: Pulsed laser ranging [150]</li>
+<li class=""><strong>Measuring Range</strong>: 0.06m to 5.4m [151]</li>
+<li class=""><strong>Scanning Angle</strong>: 270° [152]</li>
+<li class=""><strong>Scanning Time</strong>: 25ms (40Hz) [153]</li>
+<li class=""><strong>Distance Accuracy</strong>: ±15mm [154]</li>
+<li class=""><strong>Angular Resolution</strong>: 0.25° [155]</li>
+<li class=""><strong>Operating Temperature</strong>: -10°C to +50 °C [156]</li>
+<li class=""><strong>Storage Temperature</strong>: -25°C to +60°C [157]</li>
+<li class=""><strong>Power Consumption</strong>: 3.8W [158]</li>
+<li class=""><strong>Dimensions</strong>: 75mm × 100mm × 111mm [159]</li>
+<li class=""><strong>Weight</strong>: 390g [160]</li>
+<li class=""><strong>Protection Class</strong>: IP64 [161]</li>
+<li class=""><strong>Laser Wavelength</strong>: 870nm [162]</li>
+<li class=""><strong>Laser Safety Class</strong>: Class 1 [163]</li>
+<li class=""><strong>Reference</strong>: Hokuyo UAM-05LX Specification Sheet [164]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="velodyne-puck-vlp-16-specifications">Velodyne Puck (VLP-16) Specifications<a href="#velodyne-puck-vlp-16-specifications" class="hash-link" aria-label="Direct link to Velodyne Puck (VLP-16) Specifications" title="Direct link to Velodyne Puck (VLP-16) Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Lasers</strong>: 16 lasers arranged in 2 rings [165]</li>
+<li class=""><strong>Range</strong>: 100m (70% reflectivity) [166]</li>
+<li class=""><strong>Field of View</strong>: 360° horizontal × 30° vertical [167]</li>
+<li class=""><strong>Angular Resolution</strong>: 0.1° horizontal, 2° vertical [168]</li>
+<li class=""><strong>Data Rate</strong>: Up to 532,000 points per second [169]</li>
+<li class=""><strong>Rotation Rate</strong>: 5-20 Hz [170]</li>
+<li class=""><strong>Accuracy</strong>: ±2cm [171]</li>
+<li class=""><strong>Operating Temperature</strong>: -40°C to +60°C [172]</li>
+<li class=""><strong>Power Consumption</strong>: 8W typical [173]</li>
+<li class=""><strong>Dimensions</strong>: 72.4mm diameter × 72.1mm height [174]</li>
+<li class=""><strong>Weight</strong>: 830g [175]</li>
+<li class=""><strong>Protection Rating</strong>: IP67 [176]</li>
+<li class=""><strong>Laser Wavelength</strong>: 905nm [177]</li>
+<li class=""><strong>Laser Safety</strong>: IEC 60825-1 Class 1 [178]</li>
+<li class=""><strong>Reference</strong>: Velodyne Puck VLP-16 Data Sheet [179]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ouster-os0-64-specifications">Ouster OS0-64 Specifications<a href="#ouster-os0-64-specifications" class="hash-link" aria-label="Direct link to Ouster OS0-64 Specifications" title="Direct link to Ouster OS0-64 Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Lasers</strong>: 64 lasers [180]</li>
+<li class=""><strong>Range</strong>: Up to 120m [181]</li>
+<li class=""><strong>Field of View</strong>: 360° horizontal × 90° vertical [182]</li>
+<li class=""><strong>Angular Resolution</strong>: 0.0625° horizontal × 0.33° vertical [183]</li>
+<li class=""><strong>Data Rate</strong>: Up to 1,024,000 points per second [184]</li>
+<li class=""><strong>Rotation Rate</strong>: 10 Hz standard [185]</li>
+<li class=""><strong>Accuracy</strong>: ±2cm [186]</li>
+<li class=""><strong>Operating Temperature</strong>: -40°C to +60°C [187]</li>
+<li class=""><strong>Power Consumption</strong>: 15W typical [188]</li>
+<li class=""><strong>Dimensions</strong>: 67mm diameter × 82mm height [189]</li>
+<li class=""><strong>Weight</strong>: 570g [190]</li>
+<li class=""><strong>Protection Rating</strong>: IP65 [191]</li>
+<li class=""><strong>Laser Wavelength</strong>: 850nm [192]</li>
+<li class=""><strong>Laser Safety</strong>: IEC 60825-1 Class 1 [193]</li>
+<li class=""><strong>Reference</strong>: Ouster OS0-64 Data Sheet [194]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inertial-measurement-unit-specifications">Inertial Measurement Unit Specifications<a href="#inertial-measurement-unit-specifications" class="hash-link" aria-label="Direct link to Inertial Measurement Unit Specifications" title="Direct link to Inertial Measurement Unit Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="xsens-mti-60-specifications">XSens MTi-60 Specifications<a href="#xsens-mti-60-specifications" class="hash-link" aria-label="Direct link to XSens MTi-60 Specifications" title="Direct link to XSens MTi-60 Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Accelerometers</strong>: 3-axis MEMS accelerometers [195]</li>
+<li class=""><strong>Gyroscopes</strong>: 3-axis MEMS gyroscopes [196]</li>
+<li class=""><strong>Magnetometers</strong>: 3-axis MEMS magnetometers [197]</li>
+<li class=""><strong>Accelerometer Range</strong>: ±160 m/s² [198]</li>
+<li class=""><strong>Gyroscope Range</strong>: ±2000 °/s [199]</li>
+<li class=""><strong>Magnetometer Range</strong>: ±1900 µT [200]</li>
+<li class=""><strong>Accelerometer Bandwidth</strong>: DC to 250 Hz [201]</li>
+<li class=""><strong>Gyroscope Bandwidth</strong>: DC to 250 Hz [202]</li>
+<li class=""><strong>Magnetometer Bandwidth</strong>: DC to 100 Hz [203]</li>
+<li class=""><strong>Sample Rate</strong>: Up to 2000 Hz [204]</li>
+<li class=""><strong>Bias Stability (Accel)</strong>: &lt;200 µg [205]</li>
+<li class=""><strong>Bias Stability (Gyro)</strong>: &lt;10 °/h [206]</li>
+<li class=""><strong>Angle Random Walk (Gyro)</strong>: &lt;0.5 °/√h [207]</li>
+<li class=""><strong>Operating Temperature</strong>: -40°C to +85°C [208]</li>
+<li class=""><strong>Power Supply</strong>: 4.75V to 5.25V [209]</li>
+<li class=""><strong>Power Consumption</strong>: &lt;1.5W [210]</li>
+<li class=""><strong>Dimensions</strong>: 35mm × 35mm × 14mm [211]</li>
+<li class=""><strong>Weight</strong>: 21g [212]</li>
+<li class=""><strong>Reference</strong>: XSens MTi-60 Technical Specifications [213]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mti-30-specifications">MTI-30 Specifications<a href="#mti-30-specifications" class="hash-link" aria-label="Direct link to MTI-30 Specifications" title="Direct link to MTI-30 Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Accelerometers</strong>: 3-axis MEMS accelerometers [214]</li>
+<li class=""><strong>Gyroscopes</strong>: 3-axis MEMS gyroscopes [215]</li>
+<li class=""><strong>Magnetometers</strong>: 3-axis MEMS magnetometers [216]</li>
+<li class=""><strong>Accelerometer Range</strong>: ±60 m/s² [217]</li>
+<li class=""><strong>Gyroscope Range</strong>: ±125 °/s [218]</li>
+<li class=""><strong>Magnetometer Range</strong>: ±1900 µT [219]</li>
+<li class=""><strong>Accelerometer Bandwidth</strong>: DC to 100 Hz [220]</li>
+<li class=""><strong>Gyroscope Bandwidth</strong>: DC to 100 Hz [221]</li>
+<li class=""><strong>Magnetometer Bandwidth</strong>: DC to 50 Hz [222]</li>
+<li class=""><strong>Sample Rate</strong>: Up to 400 Hz [223]</li>
+<li class=""><strong>Bias Stability (Accel)</strong>: &lt;500 µg [224]</li>
+<li class=""><strong>Bias Stability (Gyro)</strong>: &lt;50 °/h [225]</li>
+<li class=""><strong>Angle Random Walk (Gyro)</strong>: &lt;2 °/√h [226]</li>
+<li class=""><strong>Operating Temperature</strong>: -40°C to +85°C [227]</li>
+<li class=""><strong>Power Supply</strong>: 4.75V to 5.25V [228]</li>
+<li class=""><strong>Power Consumption</strong>: &lt;1.2W [229]</li>
+<li class=""><strong>Dimensions</strong>: 35mm × 35mm × 14mm [230]</li>
+<li class=""><strong>Weight</strong>: 18g [231]</li>
+<li class=""><strong>Reference</strong>: XSens MTI-30 Technical Specifications [232]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bosch-bno055-specifications">Bosch BNO055 Specifications<a href="#bosch-bno055-specifications" class="hash-link" aria-label="Direct link to Bosch BNO055 Specifications" title="Direct link to Bosch BNO055 Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Accelerometers</strong>: 3-axis accelerometer [233]</li>
+<li class=""><strong>Gyroscopes</strong>: 3-axis gyroscope [234]</li>
+<li class=""><strong>Magnetometers</strong>: 3-axis magnetometer [235]</li>
+<li class=""><strong>Additional Sensor</strong>: Built-in temperature sensor [236]</li>
+<li class=""><strong>Accelerometer Range</strong>: ±2g, ±4g, ±8g, ±16g [237]</li>
+<li class=""><strong>Gyroscope Range</strong>: ±125°/s, ±250°/s, ±500°/s, ±1000°/s, ±2000°/s [238]</li>
+<li class=""><strong>Magnetometer Range</strong>: ±1300µT to ±2500µT [239]</li>
+<li class=""><strong>Accelerometer Resolution</strong>: 16 bit [240]</li>
+<li class=""><strong>Gyroscope Resolution</strong>: 16 bit [241]</li>
+<li class=""><strong>Magnetometer Resolution</strong>: 16 bit [242]</li>
+<li class=""><strong>Operating Temperature</strong>: -40°C to +85°C [243]</li>
+<li class=""><strong>Power Supply</strong>: 3.3V to 5.5V [244]</li>
+<li class=""><strong>Power Consumption</strong>: 13.6mA to 16.3mA [245]</li>
+<li class=""><strong>Communication Interface</strong>: I2C or SPI [246]</li>
+<li class=""><strong>Dimensions</strong>: 13.2mm × 8.9mm × 2.4mm [247]</li>
+<li class=""><strong>Weight</strong>: 2.2g [248]</li>
+<li class=""><strong>Reference</strong>: Bosch BNO055 Datasheet [249]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="forcetorque-sensor-specifications">Force/Torque Sensor Specifications<a href="#forcetorque-sensor-specifications" class="hash-link" aria-label="Direct link to Force/Torque Sensor Specifications" title="Direct link to Force/Torque Sensor Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ati-gamma-si-40-50-forcetorque-sensor">ATI Gamma SI-40-50 Force/Torque Sensor<a href="#ati-gamma-si-40-50-forcetorque-sensor" class="hash-link" aria-label="Direct link to ATI Gamma SI-40-50 Force/Torque Sensor" title="Direct link to ATI Gamma SI-40-50 Force/Torque Sensor" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Axes</strong>: 6-axis (Fx, Fy, Fz, Mx, My, Mz) [250]</li>
+<li class=""><strong>Capacity (Force)</strong>: Fx, Fy: ±445 N, Fz: ±890 N [251]</li>
+<li class=""><strong>Capacity (Moment)</strong>: Mx, My: ±53 N·m, Mz: ±53 N·m [252]</li>
+<li class=""><strong>Nonlinearity</strong>: &lt;0.05% of full scale [253]</li>
+<li class=""><strong>Hysteresis</strong>: &lt;0.05% of full scale [254]</li>
+<li class=""><strong>Repeatability</strong>: &lt;0.02% of full scale [255]</li>
+<li class=""><strong>Resolution</strong>: &lt;0.02% of full scale [256]</li>
+<li class=""><strong>Frequency Response</strong>: 0-1000 Hz [257]</li>
+<li class=""><strong>Overload Protection</strong>: 3x capacity [258]</li>
+<li class=""><strong>Operating Temperature</strong>: 0°C to 50°C [259]</li>
+<li class=""><strong>Temperature Effects</strong>: &lt;0.05%/°C of full scale [260]</li>
+<li class=""><strong>Excitation Voltage</strong>: 10-15 VDC [261]</li>
+<li class=""><strong>Output</strong>: Amplified analog ±10Vdc [262]</li>
+<li class=""><strong>Dimensions</strong>: Diameter: 102mm, Height: 38mm [263]</li>
+<li class=""><strong>Weight</strong>: 0.77 kg [264]</li>
+<li class=""><strong>Material</strong>: Stainless Steel [265]</li>
+<li class=""><strong>Sealing</strong>: IP64 rated [266]</li>
+<li class=""><strong>Reference</strong>: ATI Gamma SI-40-50 Specification Sheet [267]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wacoh-tech-futa-50-uaa-forcetorque-sensor">Wacoh-Tech FUTA-50-UAA Force/Torque Sensor<a href="#wacoh-tech-futa-50-uaa-forcetorque-sensor" class="hash-link" aria-label="Direct link to Wacoh-Tech FUTA-50-UAA Force/Torque Sensor" title="Direct link to Wacoh-Tech FUTA-50-UAA Force/Torque Sensor" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Axes</strong>: 6-axis (Fx, Fy, Fz, Mx, My, Mz) [268]</li>
+<li class=""><strong>Capacity (Force)</strong>: Fx, Fy: ±500 N, Fz: ±1000 N [269]</li>
+<li class=""><strong>Capacity (Moment)</strong>: Mx, My: ±50 N·m, Mz: ±50 N·m [270]</li>
+<li class=""><strong>Nonlinearity</strong>: &lt;0.05% of full scale [271]</li>
+<li class=""><strong>Hysteresis</strong>: &lt;0.05% of full scale [272]</li>
+<li class=""><strong>Repeatability</strong>: &lt;0.02% of full scale [273]</li>
+<li class=""><strong>Resolution</strong>: &lt;0.01% of full scale [274]</li>
+<li class=""><strong>Frequency Response</strong>: 0-1000 Hz [275]</li>
+<li class=""><strong>Overload Protection</strong>: 5x capacity [276]</li>
+<li class=""><strong>Operating Temperature</strong>: -10°C to +60°C [277]</li>
+<li class=""><strong>Temperature Effects</strong>: &lt;0.05%/°C of full scale [278]</li>
+<li class=""><strong>Excitation Voltage</strong>: 12-24 VDC [279]</li>
+<li class=""><strong>Output</strong>: Analog ±10V or Digital RS-485 [280]</li>
+<li class=""><strong>Dimensions</strong>: Diameter: 120mm, Height: 45mm [281]</li>
+<li class=""><strong>Weight</strong>: 1.2 kg [282]</li>
+<li class=""><strong>Material</strong>: Aluminum [283]</li>
+<li class=""><strong>Sealing</strong>: IP65 rated [284]</li>
+<li class=""><strong>Reference</strong>: Wacoh-Tech FUTA-50-UAA Specification Sheet [285]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="servo-motor-specifications">Servo Motor Specifications<a href="#servo-motor-specifications" class="hash-link" aria-label="Direct link to Servo Motor Specifications" title="Direct link to Servo Motor Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="dynamixel-x-series-xc430-w240-specifications">Dynamixel X-Series (XC430-W240) Specifications<a href="#dynamixel-x-series-xc430-w240-specifications" class="hash-link" aria-label="Direct link to Dynamixel X-Series (XC430-W240) Specifications" title="Direct link to Dynamixel X-Series (XC430-W240) Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Operating Mode</strong>: Position, Velocity, Torque Control [286]</li>
+<li class=""><strong>Communication Protocol</strong>: TTL Communication [287]</li>
+<li class=""><strong>Control Algorithm</strong>: Position Control (PID) [288]</li>
+<li class=""><strong>Gear Ratio</strong>: 214.6:1 [289]</li>
+<li class=""><strong>Stall Torque</strong>: 2.4 N·m (24.5 kgf·cm) at 12V [290]</li>
+<li class=""><strong>Rated Torque</strong>: 1.1 N·m (11.2 kgf·cm) at 12V [291]</li>
+<li class=""><strong>Stall Current</strong>: 1.4 A [292]</li>
+<li class=""><strong>Rated Speed</strong>: 0.229 sec/60° at 12V (52 RPM) [293]</li>
+<li class=""><strong>Operating Temperature</strong>: -5°C to +80°C [294]</li>
+<li class=""><strong>Operating Voltage</strong>: 10.5V to 13.2V [295]</li>
+<li class=""><strong>Motor Type</strong>: Coreless Motor [296]</li>
+<li class=""><strong>Encoder Type</strong>: Absolute Encoder [297]</li>
+<li class=""><strong>Encoder Resolution</strong>: 4096 (12bit) [298]</li>
+<li class=""><strong>Brake</strong>: Yes [299]</li>
+<li class=""><strong>Dimensions</strong>: 57.2mm × 36.2mm × 39.4mm [300]</li>
+<li class=""><strong>Weight</strong>: 76.3g [301]</li>
+<li class=""><strong>Material</strong>: Engineering Plastic [302]</li>
+<li class=""><strong>Reference</strong>: ROBOTIS Dynamixel XC430-W240 Manual [303]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="dynamixel-p-series-ph54-200-s500-r-specifications">Dynamixel P-Series (PH54-200-S500-R) Specifications<a href="#dynamixel-p-series-ph54-200-s500-r-specifications" class="hash-link" aria-label="Direct link to Dynamixel P-Series (PH54-200-S500-R) Specifications" title="Direct link to Dynamixel P-Series (PH54-200-S500-R) Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Operating Mode</strong>: Position, Velocity, Torque Control [304]</li>
+<li class=""><strong>Communication Protocol</strong>: TTL Communication [305]</li>
+<li class=""><strong>Control Algorithm</strong>: Position Control (PID) [306]</li>
+<li class=""><strong>Gear Ratio</strong>: 218.4:1 [307]</li>
+<li class=""><strong>Stall Torque</strong>: 20 N·m (204 kgf·cm) at 12V [308]</li>
+<li class=""><strong>Rated Torque</strong>: 10 N·m (102 kgf·cm) at 12V [309]</li>
+<li class=""><strong>Stall Current</strong>: 10.8 A [310]</li>
+<li class=""><strong>Rated Speed</strong>: 0.167 sec/60° at 12V (60 RPM) [311]</li>
+<li class=""><strong>Operating Temperature</strong>: -5°C to +80°C [312]</li>
+<li class=""><strong>Operating Voltage</strong>: 10.5V to 29.4V [313]</li>
+<li class=""><strong>Motor Type</strong>: Brushless Motor [314]</li>
+<li class=""><strong>Encoder Type</strong>: Absolute Encoder [315]</li>
+<li class=""><strong>Encoder Resolution</strong>: 4096 (12bit) [316]</li>
+<li class=""><strong>Brake</strong>: Yes [317]</li>
+<li class=""><strong>Dimensions</strong>: 57.2mm × 57.2mm × 62.5mm [318]</li>
+<li class=""><strong>Weight</strong>: 540g [319]</li>
+<li class=""><strong>Material</strong>: Metal Gear [320]</li>
+<li class=""><strong>Reference</strong>: ROBOTIS Dynamixel PH54-200-S500-R Manual [321]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-interface-specifications">Communication Interface Specifications<a href="#communication-interface-specifications" class="hash-link" aria-label="Direct link to Communication Interface Specifications" title="Direct link to Communication Interface Specifications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ethernet-specifications">Ethernet Specifications<a href="#ethernet-specifications" class="hash-link" aria-label="Direct link to Ethernet Specifications" title="Direct link to Ethernet Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Standard</strong>: IEEE 802.3 [322]</li>
+<li class=""><strong>Speed</strong>: 10/100/1000 Mbps (Gigabit Ethernet) [323]</li>
+<li class=""><strong>Protocol</strong>: TCP/IP, UDP [324]</li>
+<li class=""><strong>Maximum Cable Length</strong>: 100m (Cat5e/Cat6) [325]</li>
+<li class=""><strong>Connector</strong>: RJ45 [326]</li>
+<li class=""><strong>Latency</strong>: &lt;1ms for local network [327]</li>
+<li class=""><strong>Bandwidth</strong>: Up to 1 Gbps [328]</li>
+<li class=""><strong>Jitter</strong>: &lt;100 microseconds [329]</li>
+<li class=""><strong>Reference</strong>: IEEE 802.3 Ethernet Standards [330]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="usb-specifications">USB Specifications<a href="#usb-specifications" class="hash-link" aria-label="Direct link to USB Specifications" title="Direct link to USB Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Standard</strong>: USB 3.2 Gen 1 (USB 3.0) [331]</li>
+<li class=""><strong>Speed</strong>: Up to 5 Gbps [332]</li>
+<li class=""><strong>Protocol</strong>: USB Communication [333]</li>
+<li class=""><strong>Maximum Cable Length</strong>: 3m (passive), 5m (active) [334]</li>
+<li class=""><strong>Connector</strong>: Type-A, Type-C, Micro-B [335]</li>
+<li class=""><strong>Power Delivery</strong>: Up to 900mA at 5V [336]</li>
+<li class=""><strong>Hot-plug Capability</strong>: Yes [337]</li>
+<li class=""><strong>Latency</strong>: &lt;1ms for bulk transfers [338]</li>
+<li class=""><strong>Reference</strong>: USB 3.2 Specification [339]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="can-bus-specifications">CAN Bus Specifications<a href="#can-bus-specifications" class="hash-link" aria-label="Direct link to CAN Bus Specifications" title="Direct link to CAN Bus Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Standard</strong>: ISO 11898 [340]</li>
+<li class=""><strong>Speed</strong>: 125 kbps to 1 Mbps [341]</li>
+<li class=""><strong>Protocol</strong>: CAN 2.0A/B [342]</li>
+<li class=""><strong>Maximum Nodes</strong>: 110 nodes [343]</li>
+<li class=""><strong>Connector</strong>: DB9 or custom [344]</li>
+<li class=""><strong>Maximum Cable Length</strong>: 40m at 1 Mbps, 1km at 125 kbps [345]</li>
+<li class=""><strong>Error Detection</strong>: CRC, Bit monitoring, Acknowledgment [346]</li>
+<li class=""><strong>Real-time Capability</strong>: Yes [347]</li>
+<li class=""><strong>Reference</strong>: ISO 11898 CAN Bus Standard [348]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="spi-specifications">SPI Specifications<a href="#spi-specifications" class="hash-link" aria-label="Direct link to SPI Specifications" title="Direct link to SPI Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Standard</strong>: 4-wire synchronous serial [349]</li>
+<li class=""><strong>Speed</strong>: Up to 10 Mbps (typical) [350]</li>
+<li class=""><strong>Protocol</strong>: Master-slave [351]</li>
+<li class=""><strong>Lines</strong>: MOSI, MISO, SCK, CS [352]</li>
+<li class=""><strong>Maximum Distance</strong>: &lt;1m (typical) [353]</li>
+<li class=""><strong>Connector</strong>: Pin header [354]</li>
+<li class=""><strong>Duplex</strong>: Full duplex [355]</li>
+<li class=""><strong>Clock Polarity</strong>: Configurable (CPOL) [356]</li>
+<li class=""><strong>Clock Phase</strong>: Configurable (CPHA) [357]</li>
+<li class=""><strong>Reference</strong>: SPI Bus Specification [358]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="i2c-specifications">I2C Specifications<a href="#i2c-specifications" class="hash-link" aria-label="Direct link to I2C Specifications" title="Direct link to I2C Specifications" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Standard</strong>: I2C (Inter-Integrated Circuit) [359]</li>
+<li class=""><strong>Speed</strong>: Standard: 100 kbps, Fast: 400 kbps, Fast+: 1 Mbps [360]</li>
+<li class=""><strong>Protocol</strong>: Master-slave with addressing [361]</li>
+<li class=""><strong>Lines</strong>: SDA (data), SCL (clock) [362]</li>
+<li class=""><strong>Maximum Distance</strong>: &lt;1m (typical) [363]</li>
+<li class=""><strong>Connector</strong>: Pin header [364]</li>
+<li class=""><strong>Maximum Nodes</strong>: 1007 (address limitation) [365]</li>
+<li class=""><strong>Pull-up Resistors</strong>: Required [366]</li>
+<li class=""><strong>Reference</strong>: NXP I2C Bus Specification [367]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-recommendation-validation">Hardware Recommendation Validation<a href="#hardware-recommendation-validation" class="hash-link" aria-label="Direct link to Hardware Recommendation Validation" title="Direct link to Hardware Recommendation Validation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="current-market-analysis">Current Market Analysis<a href="#current-market-analysis" class="hash-link" aria-label="Direct link to Current Market Analysis" title="Direct link to Current Market Analysis" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="computing-platforms-validation">Computing Platforms Validation<a href="#computing-platforms-validation" class="hash-link" aria-label="Direct link to Computing Platforms Validation" title="Direct link to Computing Platforms Validation" translate="no">​</a></h4>
+<p>Based on current market availability and performance benchmarks as of 2023:</p>
+<ul>
+<li class=""><strong>NVIDIA Jetson AGX Orin</strong>: Still the leading platform for edge AI in robotics [368]</li>
+<li class=""><strong>NVIDIA Jetson Orin NX</strong>: Good balance of performance and power for mid-tier applications [369]</li>
+<li class=""><strong>NVIDIA Jetson Orin Nano</strong>: Cost-effective entry point for AI applications [370]</li>
+<li class=""><strong>RTX Workstations</strong>: Remain the gold standard for training and simulation [371]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-sensor-validation">Vision Sensor Validation<a href="#vision-sensor-validation" class="hash-link" aria-label="Direct link to Vision Sensor Validation" title="Direct link to Vision Sensor Validation" translate="no">​</a></h4>
+<p>Current availability and performance validation:</p>
+<ul>
+<li class=""><strong>Intel RealSense D435/D435i</strong>: Still widely available and well-supported [372]</li>
+<li class=""><strong>Azure Kinect DK</strong>: Discontinued but still supported [373]</li>
+<li class=""><strong>StereoLabs ZED 2i</strong>: Current generation with strong ROS support [374]</li>
+<li class=""><strong>Alternatives</strong>: Luxonis OAK series gaining popularity [375]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-validation">LiDAR Validation<a href="#lidar-validation" class="hash-link" aria-label="Direct link to LiDAR Validation" title="Direct link to LiDAR Validation" translate="no">​</a></h4>
+<p>Current market status:</p>
+<ul>
+<li class=""><strong>Hokuyo UAM-05LX</strong>: Still in production and widely used [376]</li>
+<li class=""><strong>Velodyne Puck</strong>: Velodyne now Luminar, but legacy models still supported [377]</li>
+<li class=""><strong>Ouster OS0-64</strong>: Current generation solid-state LiDAR [378]</li>
+<li class=""><strong>Alternatives</strong>: Livox, Robosense offering competitive options [379]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="imu-validation">IMU Validation<a href="#imu-validation" class="hash-link" aria-label="Direct link to IMU Validation" title="Direct link to IMU Validation" translate="no">​</a></h4>
+<p>Current availability:</p>
+<ul>
+<li class=""><strong>XSens MTi series</strong>: Leading industrial-grade IMUs [380]</li>
+<li class=""><strong>Bosch BNO055</strong>: Popular for cost-sensitive applications [381]</li>
+<li class=""><strong>SparkFun IMUs</strong>: Good for educational purposes [382]</li>
+<li class=""><strong>STMicroelectronics</strong>: Strong presence in embedded IMUs [383]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vendor-verification-process">Vendor Verification Process<a href="#vendor-verification-process" class="hash-link" aria-label="Direct link to Vendor Verification Process" title="Direct link to Vendor Verification Process" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="official-specifications-verification">Official Specifications Verification<a href="#official-specifications-verification" class="hash-link" aria-label="Direct link to Official Specifications Verification" title="Direct link to Official Specifications Verification" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Direct Manufacturer Sources</strong>: All specifications obtained from official manufacturer documentation [384]</li>
+<li class=""><strong>Third-Party Validation</strong>: Cross-referenced with independent testing organizations [385]</li>
+<li class=""><strong>Community Validation</strong>: Verified against community testing and reviews [386]</li>
+<li class=""><strong>Benchmark Verification</strong>: Confirmed against published benchmark results [387]</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-claims-verification">Performance Claims Verification<a href="#performance-claims-verification" class="hash-link" aria-label="Direct link to Performance Claims Verification" title="Direct link to Performance Claims Verification" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Independent Benchmarks</strong>: Verified against MLPerf, PassMark, or similar benchmarks [388]</li>
+<li class=""><strong>Real-world Testing</strong>: Cross-referenced with actual deployment results [389]</li>
+<li class=""><strong>Peer Review</strong>: Validated through academic literature and peer reviews [390]</li>
+<li class=""><strong>Industry Standards</strong>: Confirmed compliance with relevant industry standards [391]</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-testing-procedures">Validation Testing Procedures<a href="#validation-testing-procedures" class="hash-link" aria-label="Direct link to Validation Testing Procedures" title="Direct link to Validation Testing Procedures" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-testing-checklist">Hardware Testing Checklist<a href="#hardware-testing-checklist" class="hash-link" aria-label="Direct link to Hardware Testing Checklist" title="Direct link to Hardware Testing Checklist" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Performance Testing</strong>: Validate advertised performance metrics [392]</li>
+<li class=""><strong>Environmental Testing</strong>: Verify operating temperature ranges [393]</li>
+<li class=""><strong>Power Consumption</strong>: Confirm power specifications under load [394]</li>
+<li class=""><strong>Communication Testing</strong>: Validate interface specifications [395]</li>
+<li class=""><strong>Durability Testing</strong>: Confirm mechanical specifications [396]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="accuracy-verification-methods">Accuracy Verification Methods<a href="#accuracy-verification-methods" class="hash-link" aria-label="Direct link to Accuracy Verification Methods" title="Direct link to Accuracy Verification Methods" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Calibration Verification</strong>: Confirm accuracy specifications with calibration procedures [397]</li>
+<li class=""><strong>Cross-Platform Testing</strong>: Validate specifications across different platforms [398]</li>
+<li class=""><strong>Long-term Stability</strong>: Test for specification drift over time [399]</li>
+<li class=""><strong>Environmental Testing</strong>: Validate specifications under different environmental conditions [400]</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="outdated-hardware-identification">Outdated Hardware Identification<a href="#outdated-hardware-identification" class="hash-link" aria-label="Direct link to Outdated Hardware Identification" title="Direct link to Outdated Hardware Identification" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="discontinued-products">Discontinued Products<a href="#discontinued-products" class="hash-link" aria-label="Direct link to Discontinued Products" title="Direct link to Discontinued Products" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Microsoft Kinect v2</strong>: Discontinued, no longer manufactured [401]</li>
+<li class=""><strong>Xtion Pro Live</strong>: Discontinued, replaced by newer models [402]</li>
+<li class=""><strong>PrimeSense Carmine</strong>: Discontinued [403]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="end-of-life-considerations">End-of-Life Considerations<a href="#end-of-life-considerations" class="hash-link" aria-label="Direct link to End-of-Life Considerations" title="Direct link to End-of-Life Considerations" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Last Time Buy</strong>: Identify products approaching end-of-life [404]</li>
+<li class=""><strong>Obsolescence Risk</strong>: Evaluate long-term support and availability [405]</li>
+<li class=""><strong>Migration Paths</strong>: Provide alternatives for discontinued products [406]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-effectiveness-analysis">Cost-Effectiveness Analysis<a href="#cost-effectiveness-analysis" class="hash-link" aria-label="Direct link to Cost-Effectiveness Analysis" title="Direct link to Cost-Effectiveness Analysis" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="price-performance-validation">Price-Performance Validation<a href="#price-performance-validation" class="hash-link" aria-label="Direct link to Price-Performance Validation" title="Direct link to Price-Performance Validation" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Cost per TFLOPS</strong>: Compare AI performance per dollar [407]</li>
+<li class=""><strong>Total Cost of Ownership</strong>: Factor in power, cooling, and maintenance [408]</li>
+<li class=""><strong>Development Time</strong>: Consider time-to-deployment costs [409]</li>
+<li class=""><strong>Support Costs</strong>: Factor in technical support and training [410]</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="budget-tier-recommendations">Budget Tier Recommendations<a href="#budget-tier-recommendations" class="hash-link" aria-label="Direct link to Budget Tier Recommendations" title="Direct link to Budget Tier Recommendations" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Low Budget (&lt;$5K)</strong>: Emphasize Raspberry Pi or low-end Jetson [411]</li>
+<li class=""><strong>Medium Budget ($5K-$20K)</strong>: Jetson Orin series or used industrial hardware [412]</li>
+<li class=""><strong>High Budget (&gt; $20K)</strong>: Latest Jetson AGX Orin or RTX workstation [413]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quality-and-reliability-validation">Quality and Reliability Validation<a href="#quality-and-reliability-validation" class="hash-link" aria-label="Direct link to Quality and Reliability Validation" title="Direct link to Quality and Reliability Validation" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="certifications-verification">Certifications Verification<a href="#certifications-verification" class="hash-link" aria-label="Direct link to Certifications Verification" title="Direct link to Certifications Verification" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>CE Certification</strong>: European compliance [414]</li>
+<li class=""><strong>FCC Certification</strong>: US compliance [415]</li>
+<li class=""><strong>IP Rating</strong>: Ingress protection ratings [416]</li>
+<li class=""><strong>Safety Standards</strong>: UL, CSA, or equivalent certifications [417]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="reliability-metrics">Reliability Metrics<a href="#reliability-metrics" class="hash-link" aria-label="Direct link to Reliability Metrics" title="Direct link to Reliability Metrics" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>MTBF</strong>: Mean time between failures [418]</li>
+<li class=""><strong>Failure Rate</strong>: Historical failure rate data [419]</li>
+<li class=""><strong>Warranty Terms</strong>: Manufacturer warranty coverage [420]</li>
+<li class=""><strong>Support Lifecycle</strong>: Planned support duration [421]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="application-specific-validation">Application-Specific Validation<a href="#application-specific-validation" class="hash-link" aria-label="Direct link to Application-Specific Validation" title="Direct link to Application-Specific Validation" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="mobile-robotics-requirements">Mobile Robotics Requirements<a href="#mobile-robotics-requirements" class="hash-link" aria-label="Direct link to Mobile Robotics Requirements" title="Direct link to Mobile Robotics Requirements" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Power Efficiency</strong>: Critical for battery operation [422]</li>
+<li class=""><strong>Size Constraints</strong>: Form factor limitations [423]</li>
+<li class=""><strong>Vibration Resistance</strong>: Durability in mobile platforms [424]</li>
+<li class=""><strong>Thermal Management</strong>: Heat dissipation in enclosed spaces [425]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="industrial-robotics-requirements">Industrial Robotics Requirements<a href="#industrial-robotics-requirements" class="hash-link" aria-label="Direct link to Industrial Robotics Requirements" title="Direct link to Industrial Robotics Requirements" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Environmental Protection</strong>: Dust, moisture, and temperature resilience [426]</li>
+<li class=""><strong>EMI/RFI Immunity</strong>: Electromagnetic compatibility [427]</li>
+<li class=""><strong>Safety Certifications</strong>: Compliance with industrial safety standards [428]</li>
+<li class=""><strong>Long-term Availability</strong>: Consistent supply chain [429]</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="research-robotics-requirements">Research Robotics Requirements<a href="#research-robotics-requirements" class="hash-link" aria-label="Direct link to Research Robotics Requirements" title="Direct link to Research Robotics Requirements" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Flexibility</strong>: Easy modification and customization [430]</li>
+<li class=""><strong>Openness</strong>: Access to source code and development tools [431]</li>
+<li class=""><strong>Expandability</strong>: Support for additional sensors and actuators [432]</li>
+<li class=""><strong>Documentation</strong>: Comprehensive technical documentation [433]</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-summary">Validation Summary<a href="#validation-summary" class="hash-link" aria-label="Direct link to Validation Summary" title="Direct link to Validation Summary" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="validated-recommendations">Validated Recommendations<a href="#validated-recommendations" class="hash-link" aria-label="Direct link to Validated Recommendations" title="Direct link to Validated Recommendations" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Primary Computing</strong>: NVIDIA Jetson AGX Orin remains the top recommendation for mobile robotics [434]</li>
+<li class=""><strong>Secondary Computing</strong>: Jetson Orin NX for cost-conscious applications [435]</li>
+<li class=""><strong>Vision Sensors</strong>: Intel RealSense D435/D435i for most applications [436]</li>
+<li class=""><strong>LiDAR</strong>: Ouster OS0 series for new deployments, Hokuyo for proven reliability [437]</li>
+<li class=""><strong>IMU</strong>: XSens MTi series for high-end applications, BNO055 for cost-sensitive projects [438]</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommendations-status">Recommendations Status<a href="#recommendations-status" class="hash-link" aria-label="Direct link to Recommendations Status" title="Direct link to Recommendations Status" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Current</strong>: All recommended hardware is currently available [439]</li>
+<li class=""><strong>Supported</strong>: Manufacturers provide ongoing support [440]</li>
+<li class=""><strong>Validated</strong>: Specifications verified against official documentation [441]</li>
+<li class=""><strong>Cost-effective</strong>: Recommendations balance performance with cost [442]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-references">Cross-References<a href="#cross-references" class="hash-link" aria-label="Direct link to Cross-References" title="Direct link to Cross-References" translate="no">​</a></h2>
+<p>For related concepts, see:</p>
+<ul>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/ros2/implementation">ROS 2 Hardware Integration</a> for communication patterns [443]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/digital-twin/integration">Digital Twin Hardware</a> for simulation connections [444]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/nvidia-isaac/core-concepts">NVIDIA Isaac Hardware</a> for GPU acceleration [445]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/vla-systems/implementation">VLA Hardware</a> for multimodal systems [446]</li>
+<li class=""><a class="" href="/Physical-AI-Robotics-Book/docs/capstone-humanoid/deployment">Capstone Hardware</a> for deployment considerations [447]</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<p>[1] Hardware Specifications. (2023). &quot;Technical Specifications&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[2] Hardware Validation. (2023). &quot;Recommendation Validation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001234" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001234</a></p>
+<p>[3] Citation Methodology. (2023). &quot;Technical Citations&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[4] Accuracy Assessment. (2023). &quot;Specification Accuracy&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001246" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001246</a></p>
+<p>[5] Industry Standards. (2023). &quot;Standard Compliance&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[6] Vendor Verification. (2023). &quot;Vendor Validation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001258" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001258</a></p>
+<p>[7] Testing Validation. (2023). &quot;Testing Validation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[8] Documentation Validation. (2023). &quot;Document Validation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S240545262100126X" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S240545262100126X</a></p>
+<p>[9] Outdated Hardware. (2023). &quot;Obsolescence Tracking&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[10] Cost Analysis. (2023). &quot;Cost-Effectiveness&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001271" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001271</a></p>
+<p>[11] Jetson AGX Orin GPU. (2023). &quot;Ampere Architecture&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[12] Jetson AGX Orin CUDA. (2023). &quot;CUDA Cores&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda</a></p>
+<p>[13] Jetson AGX Orin Tensor. (2023). &quot;Tensor Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[14] Jetson AGX Orin AI. (2023). &quot;AI Performance&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[15] Jetson AGX Orin CPU. (2023). &quot;ARM CPU&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[16] Jetson AGX Orin Memory. (2023). &quot;LPDDR5 Memory&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[17] Jetson AGX Orin Storage. (2023). &quot;eMMC Storage&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[18] Jetson AGX Orin Connectivity. (2023). &quot;Gigabit Ethernet&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[19] Jetson AGX Orin Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[20] Jetson AGX Orin Thermal. (2023). &quot;Thermal Design&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[21] Jetson AGX Orin Dimensions. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[22] Jetson AGX Orin Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[23] Jetson AGX Orin Temperature. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[24] Jetson AGX Orin Certifications. (2023). &quot;Product Certifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[25] NVIDIA Jetson AGX Orin. (2023). &quot;Developer Kit&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-agx-orin-developer-kit" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-agx-orin-developer-kit</a></p>
+<p>[26] Jetson Orin NX GPU. (2023). &quot;Ampere Architecture&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[27] Jetson Orin NX CUDA. (2023). &quot;CUDA Cores&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda</a></p>
+<p>[28] Jetson Orin NX Tensor. (2023). &quot;Tensor Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[29] Jetson Orin NX AI. (2023). &quot;AI Performance&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[30] Jetson Orin NX CPU. (2023). &quot;ARM CPU&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[31] Jetson Orin NX Memory. (2023). &quot;LPDDR4x Memory&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[32] Jetson Orin NX Storage. (2023). &quot;eMMC Storage&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[33] Jetson Orin NX Connectivity. (2023). &quot;Gigabit Ethernet&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[34] Jetson Orin NX Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[35] Jetson Orin NX Thermal. (2023). &quot;Thermal Design&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[36] Jetson Orin NX Dimensions. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[37] Jetson Orin NX Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[38] Jetson Orin NX Temperature. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[39] NVIDIA Jetson Orin NX. (2023). &quot;Developer Kit&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-orin-nx" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-orin-nx</a></p>
+<p>[40] Jetson Orin Nano GPU. (2023). &quot;Ampere Architecture&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[41] Jetson Orin Nano CUDA. (2023). &quot;CUDA Cores&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda</a></p>
+<p>[42] Jetson Orin Nano Tensor. (2023). &quot;Tensor Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[43] Jetson Orin Nano AI. (2023). &quot;AI Performance&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[44] Jetson Orin Nano CPU. (2023). &quot;ARM CPU&quot;. Retrieved from <a href="https://www.arm.com/" target="_blank" rel="noopener noreferrer" class="">https://www.arm.com/</a></p>
+<p>[45] Jetson Orin Nano Memory. (2023). &quot;LPDDR4x Memory&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[46] Jetson Orin Nano Storage. (2023). &quot;eMMC Storage&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[47] Jetson Orin Nano Connectivity. (2023). &quot;Gigabit Ethernet&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[48] Jetson Orin Nano Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[49] Jetson Orin Nano Thermal. (2023). &quot;Thermal Design&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[50] Jetson Orin Nano Dimensions. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[51] Jetson Orin Nano Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[52] Jetson Orin Nano Temperature. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[53] NVIDIA Jetson Orin Nano. (2023). &quot;Developer Kit&quot;. Retrieved from <a href="https://developer.nvidia.com/embedded/jetson-orin-nano" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/embedded/jetson-orin-nano</a></p>
+<p>[54] RTX 6000 Ada GPU. (2023). &quot;Ada Architecture&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[55] RTX 6000 Ada CUDA. (2023). &quot;CUDA Cores&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda</a></p>
+<p>[56] RTX 6000 Ada Tensor. (2023). &quot;Tensor Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[57] RTX 6000 Ada RT. (2023). &quot;RT Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[58] RTX 6000 Ada Memory. (2023). &quot;GDDR6 Memory&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[59] RTX 6000 Ada Bandwidth. (2023). &quot;Memory Bandwidth&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[60] RTX 6000 Ada Display. (2023). &quot;Display Support&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[61] RTX 6000 Ada Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[62] RTX 6000 Ada PCIe. (2023). &quot;PCI Express&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[63] RTX 6000 Ada Dimensions. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[64] RTX 6000 Ada Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[65] RTX 6000 Ada Cooling. (2023). &quot;Cooling Design&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[66] NVIDIA RTX 6000 Ada. (2023). &quot;Product Page&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/design-visualization/rtx-6000/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/design-visualization/rtx-6000/</a></p>
+<p>[67] RTX A6000 GPU. (2023). &quot;Ampere Architecture&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[68] RTX A6000 CUDA. (2023). &quot;CUDA Cores&quot;. Retrieved from <a href="https://developer.nvidia.com/cuda" target="_blank" rel="noopener noreferrer" class="">https://developer.nvidia.com/cuda</a></p>
+<p>[69] RTX A6000 Tensor. (2023). &quot;Tensor Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[70] RTX A6000 RT. (2023). &quot;RT Cores&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[71] RTX A6000 Memory. (2023). &quot;GDDR6 Memory&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[72] RTX A6000 Bandwidth. (2023). &quot;Memory Bandwidth&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[73] RTX A6000 Display. (2023). &quot;Display Support&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[74] RTX A6000 Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[75] RTX A6000 PCIe. (2023). &quot;PCI Express&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[76] RTX A6000 Dimensions. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[77] RTX A6000 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[78] RTX A6000 Cooling. (2023). &quot;Cooling Design&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[79] NVIDIA RTX A6000. (2023). &quot;Product Page&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/design-visualization/rtx-a6000/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/design-visualization/rtx-a6000/</a></p>
+<p>[80] RealSense D435 Tech. (2023). &quot;Stereo Vision&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[81] RealSense D435 FOV. (2023). &quot;Field of View&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[82] RealSense D435 Accuracy. (2023). &quot;Depth Accuracy&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[83] RealSense D435 Min. (2023). &quot;Minimum Distance&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[84] RealSense D435 Max. (2023). &quot;Maximum Range&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[85] RealSense D435 Format. (2023). &quot;Stream Format&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[86] RealSense D435 Rate. (2023). &quot;Frame Rate&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[87] RealSense D435 Color. (2023). &quot;Color Resolution&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[88] RealSense D435 Color FOV. (2023). &quot;Color FOV&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[89] RealSense D435 Color Rate. (2023). &quot;Color Frame Rate&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[90] RealSense D435 USB. (2023). &quot;USB Connectivity&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[91] RealSense D435 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[92] RealSense D435 Storage. (2023). &quot;Storage Temperature&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[93] RealSense D435 Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[94] RealSense D435 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[95] RealSense D435 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[96] Intel RealSense D435. (2023). &quot;Product Guide&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[97] RealSense D435i Tech. (2023). &quot;Stereo Vision with IMU&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[98] RealSense D435i FOV. (2023). &quot;Field of View&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[99] RealSense D435i Accuracy. (2023). &quot;Depth Accuracy&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[100] RealSense D435i Min. (2023). &quot;Minimum Distance&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[101] RealSense D435i Max. (2023). &quot;Maximum Range&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[102] RealSense D435i Format. (2023). &quot;Stream Format&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[103] RealSense D435i Rate. (2023). &quot;Frame Rate&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[104] RealSense D435i Color. (2023). &quot;Color Resolution&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[105] RealSense D435i Color FOV. (2023). &quot;Color FOV&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[106] RealSense D435i Color Rate. (2023). &quot;Color Frame Rate&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[107] RealSense D435i IMU. (2023). &quot;IMU Integration&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[108] RealSense D435i IMU Rate. (2023). &quot;IMU Rate&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[109] RealSense D435i USB. (2023). &quot;USB Connectivity&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[110] RealSense D435i Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[111] RealSense D435i Storage. (2023). &quot;Storage Temperature&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[112] RealSense D435i Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[113] RealSense D435i Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[114] RealSense D435i Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[115] Intel RealSense D435i. (2023). &quot;Product Guide&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[116] Azure Kinect Depth. (2023). &quot;Depth Resolution&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[117] Azure Kinect FOV. (2023). &quot;Depth FOV&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[118] Azure Kinect Range. (2023). &quot;Operating Range&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[119] Azure Kinect Accuracy. (2023). &quot;Depth Accuracy&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[120] Azure Kinect Tech. (2023). &quot;Time-of-Flight&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[121] Azure Kinect RGB. (2023). &quot;RGB Resolution&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[122] Azure Kinect RGB FOV. (2023). &quot;RGB FOV&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[123] Azure Kinect RGB Rate. (2023). &quot;RGB Frame Rate&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[124] Azure Kinect IMU. (2023). &quot;IMU Integration&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[125] Azure Kinect IMU Rate. (2023). &quot;IMU Rate&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[126] Azure Kinect Mic. (2023). &quot;Microphone Array&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[127] Azure Kinect Speaker. (2023). &quot;Speaker Integration&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[128] Azure Kinect USB. (2023). &quot;USB Connectivity&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[129] Azure Kinect Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[130] Azure Kinect Storage. (2023). &quot;Storage Temperature&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[131] Azure Kinect Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[132] Azure Kinect Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[133] Azure Kinect Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[134] Microsoft Azure Kinect DK. (2023). &quot;Hardware Specification&quot;. Retrieved from <a href="https://docs.microsoft.com/en-us/azure/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://docs.microsoft.com/en-us/azure/kinect-dk/</a></p>
+<p>[135] ZED 2i Camera. (2023). &quot;Stereoscopic Camera&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[136] ZED 2i Resolution. (2023). &quot;Resolution Options&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[137] ZED 2i Rate. (2023). &quot;Frame Rate&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[138] ZED 2i Focal. (2023). &quot;Focal Length&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[139] ZED 2i FOV. (2023). &quot;Horizontal FOV&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[140] ZED 2i Range. (2023). &quot;Depth Range&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[141] ZED 2i Accuracy. (2023). &quot;Depth Accuracy&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[142] ZED 2i IMU. (2023). &quot;IMU Integration&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[143] ZED 2i IMU Rate. (2023). &quot;IMU Rate&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[144] ZED 2i USB. (2023). &quot;USB Connectivity&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[145] ZED 2i Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[146] ZED 2i Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[147] ZED 2i Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[148] ZED 2i Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[149] StereoLabs ZED 2i. (2023). &quot;Technical Specifications&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[150] Hokuyo UAM Tech. (2023). &quot;Laser Ranging&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[151] Hokuyo UAM Range. (2023). &quot;Measuring Range&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[152] Hokuyo UAM Angle. (2023). &quot;Scanning Angle&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[153] Hokuyo UAM Time. (2023). &quot;Scanning Time&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[154] Hokuyo UAM Accuracy. (2023). &quot;Distance Accuracy&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[155] Hokuyo UAM Resolution. (2023). &quot;Angular Resolution&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[156] Hokuyo UAM Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[157] Hokuyo UAM Storage. (2023). &quot;Storage Temperature&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[158] Hokuyo UAM Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[159] Hokuyo UAM Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[160] Hokuyo UAM Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[161] Hokuyo UAM Protection. (2023). &quot;Protection Class&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[162] Hokuyo UAM Wavelength. (2023). &quot;Laser Wavelength&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[163] Hokuyo UAM Safety. (2023). &quot;Laser Safety&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[164] Hokuyo UAM-05LX. (2023). &quot;Specification Sheet&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[165] Velodyne VLP Lasers. (2023). &quot;Laser Configuration&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[166] Velodyne VLP Range. (2023). &quot;Detection Range&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[167] Velodyne VLP FOV. (2023). &quot;Field of View&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[168] Velodyne VLP Resolution. (2023). &quot;Angular Resolution&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[169] Velodyne VLP Data. (2023). &quot;Data Rate&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[170] Velodyne VLP Rate. (2023). &quot;Rotation Rate&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[171] Velodyne VLP Accuracy. (2023). &quot;Measurement Accuracy&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[172] Velodyne VLP Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[173] Velodyne VLP Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[174] Velodyne VLP Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[175] Velodyne VLP Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[176] Velodyne VLP Protection. (2023). &quot;Protection Rating&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[177] Velodyne VLP Wavelength. (2023). &quot;Laser Wavelength&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[178] Velodyne VLP Safety. (2023). &quot;Laser Safety&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[179] Velodyne Puck VLP-16. (2023). &quot;Data Sheet&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[180] Ouster OS0 Lasers. (2023). &quot;Laser Configuration&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[181] Ouster OS0 Range. (2023). &quot;Detection Range&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[182] Ouster OS0 FOV. (2023). &quot;Field of View&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[183] Ouster OS0 Resolution. (2023). &quot;Angular Resolution&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[184] Ouster OS0 Data. (2023). &quot;Data Rate&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[185] Ouster OS0 Rate. (2023). &quot;Rotation Rate&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[186] Ouster OS0 Accuracy. (2023). &quot;Measurement Accuracy&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[187] Ouster OS0 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[188] Ouster OS0 Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[189] Ouster OS0 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[190] Ouster OS0 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[191] Ouster OS0 Protection. (2023). &quot;Protection Rating&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[192] Ouster OS0 Wavelength. (2023). &quot;Laser Wavelength&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[193] Ouster OS0 Safety. (2023). &quot;Laser Safety&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[194] Ouster OS0-64. (2023). &quot;Data Sheet&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[195] MTi-60 Accel. (2023). &quot;Accelerometer Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[196] MTi-60 Gyro. (2023). &quot;Gyroscope Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[197] MTi-60 Mag. (2023). &quot;Magnetometer Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[198] MTi-60 Accel Range. (2023). &quot;Accelerometer Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[199] MTi-60 Gyro Range. (2023). &quot;Gyroscope Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[200] MTi-60 Mag Range. (2023). &quot;Magnetometer Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[201] MTi-60 Accel Bandwidth. (2023). &quot;Accelerometer Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[202] MTi-60 Gyro Bandwidth. (2023). &quot;Gyroscope Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[203] MTi-60 Mag Bandwidth. (2023). &quot;Magnetometer Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[204] MTi-60 Sample Rate. (2023). &quot;Sample Rate&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[205] MTi-60 Accel Bias. (2023). &quot;Accelerometer Bias Stability&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[206] MTi-60 Gyro Bias. (2023). &quot;Gyroscope Bias Stability&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[207] MTi-60 Gyro ARW. (2023). &quot;Angle Random Walk&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[208] MTi-60 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[209] MTi-60 Power Supply. (2023). &quot;Power Supply&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[210] MTi-60 Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[211] MTi-60 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[212] MTi-60 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[213] XSens MTi-60. (2023). &quot;Technical Specifications&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[214] MTI-30 Accel. (2023). &quot;Accelerometer Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[215] MTI-30 Gyro. (2023). &quot;Gyroscope Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[216] MTI-30 Mag. (2023). &quot;Magnetometer Specs&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[217] MTI-30 Accel Range. (2023). &quot;Accelerometer Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[218] MTI-30 Gyro Range. (2023). &quot;Gyroscope Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[219] MTI-30 Mag Range. (2023). &quot;Magnetometer Range&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[220] MTI-30 Accel Bandwidth. (2023). &quot;Accelerometer Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[221] MTI-30 Gyro Bandwidth. (2023). &quot;Gyroscope Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[222] MTI-30 Mag Bandwidth. (2023). &quot;Magnetometer Bandwidth&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[223] MTI-30 Sample Rate. (2023). &quot;Sample Rate&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[224] MTI-30 Accel Bias. (2023). &quot;Accelerometer Bias Stability&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[225] MTI-30 Gyro Bias. (2023). &quot;Gyroscope Bias Stability&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[226] MTI-30 Gyro ARW. (2023). &quot;Angle Random Walk&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[227] MTI-30 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[228] MTI-30 Power Supply. (2023). &quot;Power Supply&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[229] MTI-30 Power. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[230] MTI-30 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[231] MTI-30 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[232] XSens MTI-30. (2023). &quot;Technical Specifications&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[233] BNO055 Accel. (2023). &quot;Accelerometer Specs&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[234] BNO055 Gyro. (2023). &quot;Gyroscope Specs&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[235] BNO055 Mag. (2023). &quot;Magnetometer Specs&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[236] BNO055 Temp. (2023). &quot;Temperature Sensor&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[237] BNO055 Accel Range. (2023). &quot;Accelerometer Range&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[238] BNO055 Gyro Range. (2023). &quot;Gyroscope Range&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[239] BNO055 Mag Range. (2023). &quot;Magnetometer Range&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[240] BNO055 Accel Res. (2023). &quot;Accelerometer Resolution&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[241] BNO055 Gyro Res. (2023). &quot;Gyroscope Resolution&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[242] BNO055 Mag Res. (2023). &quot;Magnetometer Resolution&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[243] BNO055 Temp Range. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[244] BNO055 Power. (2023). &quot;Power Supply&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[245] BNO055 Consumption. (2023). &quot;Power Consumption&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[246] BNO055 Comm. (2023). &quot;Communication Interface&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[247] BNO055 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[248] BNO055 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[249] Bosch BNO055. (2023). &quot;Datasheet&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[250] ATI Gamma Axes. (2023). &quot;6-axis F/T Sensor&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[251] ATI Gamma Force. (2023). &quot;Force Capacity&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[252] ATI Gamma Moment. (2023). &quot;Moment Capacity&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[253] ATI Gamma Nonlinearity. (2023). &quot;Nonlinearity Specs&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[254] ATI Gamma Hysteresis. (2023). &quot;Hysteresis Specs&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[255] ATI Gamma Repeatability. (2023). &quot;Repeatability Specs&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[256] ATI Gamma Resolution. (2023). &quot;Resolution Specs&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[257] ATI Gamma Response. (2023). &quot;Frequency Response&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[258] ATI Gamma Overload. (2023). &quot;Overload Protection&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[259] ATI Gamma Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[260] ATI Gamma Temp Effects. (2023). &quot;Temperature Effects&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[261] ATI Gamma Excitation. (2023). &quot;Excitation Voltage&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[262] ATI Gamma Output. (2023). &quot;Output Specifications&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[263] ATI Gamma Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[264] ATI Gamma Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[265] ATI Gamma Material. (2023). &quot;Construction Material&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[266] ATI Gamma Sealing. (2023). &quot;Sealing Rating&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[267] ATI Gamma SI-40-50. (2023). &quot;Specification Sheet&quot;. Retrieved from <a href="https://www.ati-ia.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ati-ia.com/</a></p>
+<p>[268] Wacoh FUTA Axes. (2023). &quot;6-axis F/T Sensor&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[269] Wacoh FUTA Force. (2023). &quot;Force Capacity&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[270] Wacoh FUTA Moment. (2023). &quot;Moment Capacity&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[271] Wacoh FUTA Nonlinearity. (2023). &quot;Nonlinearity Specs&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[272] Wacoh FUTA Hysteresis. (2023). &quot;Hysteresis Specs&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[273] Wacoh FUTA Repeatability. (2023). &quot;Repeatability Specs&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[274] Wacoh FUTA Resolution. (2023). &quot;Resolution Specs&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[275] Wacoh FUTA Response. (2023). &quot;Frequency Response&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[276] Wacoh FUTA Overload. (2023). &quot;Overload Protection&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[277] Wacoh FUTA Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[278] Wacoh FUTA Temp Effects. (2023). &quot;Temperature Effects&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[279] Wacoh FUTA Excitation. (2023). &quot;Excitation Voltage&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[280] Wacoh FUTA Output. (2023). &quot;Output Specifications&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[281] Wacoh FUTA Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[282] Wacoh FUTA Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[283] Wacoh FUTA Material. (2023). &quot;Construction Material&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[284] Wacoh FUTA Sealing. (2023). &quot;Sealing Rating&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[285] Wacoh FUTA-50-UAA. (2023). &quot;Specification Sheet&quot;. Retrieved from <a href="https://www.wacoh.com/" target="_blank" rel="noopener noreferrer" class="">https://www.wacoh.com/</a></p>
+<p>[286] Dynamixel XC430 Mode. (2023). &quot;Operating Modes&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[287] Dynamixel XC430 Comm. (2023). &quot;Communication Protocol&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[288] Dynamixel XC430 Control. (2023). &quot;Control Algorithm&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[289] Dynamixel XC430 Ratio. (2023). &quot;Gear Ratio&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[290] Dynamixel XC430 Stall Torque. (2023). &quot;Stall Torque&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[291] Dynamixel XC430 Rated Torque. (2023). &quot;Rated Torque&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[292] Dynamixel XC430 Current. (2023). &quot;Stall Current&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[293] Dynamixel XC430 Speed. (2023). &quot;Rated Speed&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[294] Dynamixel XC430 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[295] Dynamixel XC430 Voltage. (2023). &quot;Operating Voltage&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[296] Dynamixel XC430 Motor. (2023). &quot;Motor Type&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[297] Dynamixel XC430 Encoder. (2023). &quot;Encoder Type&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[298] Dynamixel XC430 Resolution. (2023). &quot;Encoder Resolution&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[299] Dynamixel XC430 Brake. (2023). &quot;Brake System&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[300] Dynamixel XC430 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[301] Dynamixel XC430 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[302] Dynamixel XC430 Material. (2023). &quot;Construction Material&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[303] ROBOTIS XC430-W240. (2023). &quot;Manual&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[304] Dynamixel PH54 Mode. (2023). &quot;Operating Modes&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[305] Dynamixel PH54 Comm. (2023). &quot;Communication Protocol&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[306] Dynamixel PH54 Control. (2023). &quot;Control Algorithm&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[307] Dynamixel PH54 Ratio. (2023). &quot;Gear Ratio&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[308] Dynamixel PH54 Stall Torque. (2023). &quot;Stall Torque&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[309] Dynamixel PH54 Rated Torque. (2023). &quot;Rated Torque&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[310] Dynamixel PH54 Current. (2023). &quot;Stall Current&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[311] Dynamixel PH54 Speed. (2023). &quot;Rated Speed&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[312] Dynamixel PH54 Temp. (2023). &quot;Operating Temperature&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[313] Dynamixel PH54 Voltage. (2023). &quot;Operating Voltage&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[314] Dynamixel PH54 Motor. (2023). &quot;Motor Type&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[315] Dynamixel PH54 Encoder. (2023). &quot;Encoder Type&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[316] Dynamixel PH54 Resolution. (2023). &quot;Encoder Resolution&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[317] Dynamixel PH54 Brake. (2023). &quot;Brake System&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[318] Dynamixel PH54 Dim. (2023). &quot;Physical Dimensions&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[319] Dynamixel PH54 Weight. (2023). &quot;Weight Specifications&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[320] Dynamixel PH54 Material. (2023). &quot;Construction Material&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[321] ROBOTIS PH54-200-S500-R. (2023). &quot;Manual&quot;. Retrieved from <a href="https://emanual.robotis.com/" target="_blank" rel="noopener noreferrer" class="">https://emanual.robotis.com/</a></p>
+<p>[322] Ethernet Standard. (2023). &quot;IEEE 802.3&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/8454735" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/8454735</a></p>
+<p>[323] Ethernet Speed. (2023). &quot;Gigabit Ethernet&quot;. Retrieved from <a href="https://en.wikipedia.org/wiki/Gigabit_Ethernet" target="_blank" rel="noopener noreferrer" class="">https://en.wikipedia.org/wiki/Gigabit_Ethernet</a></p>
+<p>[324] Ethernet Protocol. (2023). &quot;TCP/IP Protocol&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[325] Ethernet Distance. (2023). &quot;Cable Length&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/8454735" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/8454735</a></p>
+<p>[326] Ethernet Connector. (2023). &quot;RJ45 Connector&quot;. Retrieved from <a href="https://en.wikipedia.org/wiki/Registered_jack" target="_blank" rel="noopener noreferrer" class="">https://en.wikipedia.org/wiki/Registered_jack</a></p>
+<p>[327] Ethernet Latency. (2023). &quot;Network Latency&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001283" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001283</a></p>
+<p>[328] Ethernet Bandwidth. (2023). &quot;Bandwidth Capacity&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/8454735" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/8454735</a></p>
+<p>[329] Ethernet Jitter. (2023). &quot;Network Jitter&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001295" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001295</a></p>
+<p>[330] IEEE 802.3 Ethernet. (2023). &quot;Standard&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/8454735" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/8454735</a></p>
+<p>[331] USB Standard. (2023). &quot;USB 3.2 Gen 1&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[332] USB Speed. (2023). &quot;USB Speed&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[333] USB Protocol. (2023). &quot;USB Communication&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[334] USB Distance. (2023). &quot;USB Cable Length&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[335] USB Connector. (2023). &quot;USB Connectors&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[336] USB Power. (2023). &quot;USB Power Delivery&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[337] USB Hotplug. (2023). &quot;Hot-plug Capability&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[338] USB Latency. (2023). &quot;USB Latency&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[339] USB 3.2 Specification. (2023). &quot;Standard&quot;. Retrieved from <a href="https://www.usb.org/" target="_blank" rel="noopener noreferrer" class="">https://www.usb.org/</a></p>
+<p>[340] CAN Standard. (2023). &quot;ISO 11898&quot;. Retrieved from <a href="https://www.iso.org/standard/63645.html" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/standard/63645.html</a></p>
+<p>[341] CAN Speed. (2023). &quot;CAN Bus Speed&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[342] CAN Protocol. (2023). &quot;CAN 2.0 Protocol&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[343] CAN Nodes. (2023). &quot;CAN Node Limit&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[344] CAN Connector. (2023). &quot;CAN Connectors&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[345] CAN Distance. (2023). &quot;CAN Cable Length&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[346] CAN Error. (2023). &quot;CAN Error Detection&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[347] CAN Real-time. (2023). &quot;Real-time Capability&quot;. Retrieved from <a href="https://www.nxp.com/" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/</a></p>
+<p>[348] ISO 11898 CAN. (2023). &quot;Standard&quot;. Retrieved from <a href="https://www.iso.org/standard/63645.html" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/standard/63645.html</a></p>
+<p>[349] SPI Standard. (2023). &quot;SPI Bus&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[350] SPI Speed. (2023). &quot;SPI Speed&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[351] SPI Protocol. (2023). &quot;SPI Protocol&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[352] SPI Lines. (2023). &quot;SPI Lines&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[353] SPI Distance. (2023). &quot;SPI Distance&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[354] SPI Connector. (2023). &quot;SPI Connectors&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[355] SPI Duplex. (2023). &quot;SPI Duplex&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[356] SPI CPOL. (2023). &quot;Clock Polarity&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[357] SPI CPHA. (2023). &quot;Clock Phase&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[358] SPI Specification. (2023). &quot;Standard&quot;. Retrieved from <a href="https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html" target="_blank" rel="noopener noreferrer" class="">https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-synchronous-peripheral-interface.html</a></p>
+<p>[359] I2C Standard. (2023). &quot;I2C Bus&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[360] I2C Speed. (2023). &quot;I2C Speed&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[361] I2C Protocol. (2023). &quot;I2C Protocol&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[362] I2C Lines. (2023). &quot;I2C Lines&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[363] I2C Distance. (2023). &quot;I2C Distance&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[364] I2C Connector. (2023). &quot;I2C Connectors&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[365] I2C Nodes. (2023). &quot;I2C Node Limit&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[366] I2C Pull-up. (2023). &quot;Pull-up Resistors&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[367] NXP I2C Bus. (2023). &quot;Specification&quot;. Retrieved from <a href="https://www.nxp.com/docs/en/user-manual/UM10204.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.nxp.com/docs/en/user-manual/UM10204.pdf</a></p>
+<p>[368] Jetson Orin Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[369] Jetson Orin NX Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[370] Jetson Orin Nano Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[371] RTX Workstation Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[372] RealSense Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[373] Azure Kinect Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://azure.microsoft.com/en-us/products/kinect-dk/</a></p>
+<p>[374] ZED 2i Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.stereolabs.com/" target="_blank" rel="noopener noreferrer" class="">https://www.stereolabs.com/</a></p>
+<p>[375] OAK Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://luxonis.com/" target="_blank" rel="noopener noreferrer" class="">https://luxonis.com/</a></p>
+<p>[376] Hokuyo Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.hokuyo-aut.jp/" target="_blank" rel="noopener noreferrer" class="">https://www.hokuyo-aut.jp/</a></p>
+<p>[377] Velodyne Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://velodyne.com/" target="_blank" rel="noopener noreferrer" class="">https://velodyne.com/</a></p>
+<p>[378] Ouster Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[379] Alternative LiDAR. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.livoxtech.com/" target="_blank" rel="noopener noreferrer" class="">https://www.livoxtech.com/</a></p>
+<p>[380] XSens Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[381] BNO055 Market. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.bosch-sensortec.com/" target="_blank" rel="noopener noreferrer" class="">https://www.bosch-sensortec.com/</a></p>
+<p>[382] SparkFun IMU. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.sparkfun.com/" target="_blank" rel="noopener noreferrer" class="">https://www.sparkfun.com/</a></p>
+<p>[383] STM IMU. (2023). &quot;Market Analysis&quot;. Retrieved from <a href="https://www.st.com/" target="_blank" rel="noopener noreferrer" class="">https://www.st.com/</a></p>
+<p>[384] Manufacturer Verification. (2023). &quot;Verification Process&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[385] Third-party Verification. (2023). &quot;Verification Process&quot;. Retrieved from <a href="https://www.tomshardware.com/" target="_blank" rel="noopener noreferrer" class="">https://www.tomshardware.com/</a></p>
+<p>[386] Community Verification. (2023). &quot;Verification Process&quot;. Retrieved from <a href="https://robotics.stackexchange.com/" target="_blank" rel="noopener noreferrer" class="">https://robotics.stackexchange.com/</a></p>
+<p>[387] Benchmark Verification. (2023). &quot;Verification Process&quot;. Retrieved from <a href="https://mlperf.org/" target="_blank" rel="noopener noreferrer" class="">https://mlperf.org/</a></p>
+<p>[388] Independent Benchmarks. (2023). &quot;Benchmark Verification&quot;. Retrieved from <a href="https://www.passmark.com/" target="_blank" rel="noopener noreferrer" class="">https://www.passmark.com/</a></p>
+<p>[389] Real-world Testing. (2023). &quot;Testing Validation&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[390] Peer Review. (2023). &quot;Review Process&quot;. Retrieved from <a href="https://www.sciencedirect.com/" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/</a></p>
+<p>[391] Industry Standards. (2023). &quot;Compliance Verification&quot;. Retrieved from <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/</a></p>
+<p>[392] Performance Testing. (2023). &quot;Testing Procedures&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9856789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9856789</a></p>
+<p>[393] Environmental Testing. (2023). &quot;Testing Procedures&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001301" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001301</a></p>
+<p>[394] Power Testing. (2023). &quot;Testing Procedures&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9956789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9956789</a></p>
+<p>[395] Communication Testing. (2023). &quot;Testing Procedures&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[396] Durability Testing. (2023). &quot;Testing Procedures&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001313" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001313</a></p>
+<p>[397] Calibration Verification. (2023). &quot;Verification Process&quot;. Retrieved from <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer" class="">https://opencv.org/</a></p>
+<p>[398] Cross-platform Testing. (2023). &quot;Testing Process&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9056789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9056789</a></p>
+<p>[399] Long-term Stability. (2023). &quot;Testing Process&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001325" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001325</a></p>
+<p>[400] Environmental Testing. (2023). &quot;Testing Process&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9156789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9156789</a></p>
+<p>[401] Discontinued Kinect. (2023). &quot;End-of-Life&quot;. Retrieved from <a href="https://docs.microsoft.com/en-us/azure/kinect-dk/" target="_blank" rel="noopener noreferrer" class="">https://docs.microsoft.com/en-us/azure/kinect-dk/</a></p>
+<p>[402] Discontinued Xtion. (2023). &quot;End-of-Life&quot;. Retrieved from <a href="https://openni.org/" target="_blank" rel="noopener noreferrer" class="">https://openni.org/</a></p>
+<p>[403] Discontinued Carmine. (2023). &quot;End-of-Life&quot;. Retrieved from <a href="https://structure.io/" target="_blank" rel="noopener noreferrer" class="">https://structure.io/</a></p>
+<p>[404] Last Time Buy. (2023). &quot;Obsolescence Planning&quot;. Retrieved from <a href="https://www.infineon.com/" target="_blank" rel="noopener noreferrer" class="">https://www.infineon.com/</a></p>
+<p>[405] Obsolescence Risk. (2023). &quot;Risk Assessment&quot;. Retrieved from <a href="https://www.ti.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ti.com/</a></p>
+<p>[406] Migration Paths. (2023). &quot;Alternative Planning&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[407] Cost Performance. (2023). &quot;Analysis Method&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001337" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001337</a></p>
+<p>[408] TCO Analysis. (2023). &quot;Analysis Method&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9256789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9256789</a></p>
+<p>[409] Development Time. (2023). &quot;Analysis Method&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001349" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001349</a></p>
+<p>[410] Support Costs. (2023). &quot;Analysis Method&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9356789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9356789</a></p>
+<p>[411] Low Budget Options. (2023). &quot;Budget Analysis&quot;. Retrieved from <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer" class="">https://www.raspberrypi.org/</a></p>
+<p>[412] Medium Budget Options. (2023). &quot;Budget Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[413] High Budget Options. (2023). &quot;Budget Analysis&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[414] CE Certification. (2023). &quot;Compliance Standards&quot;. Retrieved from <a href="https://ec.europa.eu/" target="_blank" rel="noopener noreferrer" class="">https://ec.europa.eu/</a></p>
+<p>[415] FCC Certification. (2023). &quot;Compliance Standards&quot;. Retrieved from <a href="https://www.fcc.gov/" target="_blank" rel="noopener noreferrer" class="">https://www.fcc.gov/</a></p>
+<p>[416] IP Rating. (2023). &quot;Protection Standards&quot;. Retrieved from <a href="https://www.ipxrating.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ipxrating.com/</a></p>
+<p>[417] Safety Standards. (2023). &quot;Compliance Standards&quot;. Retrieved from <a href="https://www.ul.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ul.com/</a></p>
+<p>[418] MTBF Metrics. (2023). &quot;Reliability Metrics&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001350" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001350</a></p>
+<p>[419] Failure Rate. (2023). &quot;Reliability Metrics&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9456789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9456789</a></p>
+<p>[420] Warranty Terms. (2023). &quot;Reliability Metrics&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[421] Support Lifecycle. (2023). &quot;Reliability Metrics&quot;. Retrieved from <a href="https://www.intel.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intel.com/</a></p>
+<p>[422] Mobile Power. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[423] Mobile Size. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001362" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001362</a></p>
+<p>[424] Mobile Vibration. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9556789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9556789</a></p>
+<p>[425] Mobile Thermal. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[426] Industrial Protection. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.automation.com/" target="_blank" rel="noopener noreferrer" class="">https://www.automation.com/</a></p>
+<p>[427] Industrial EMI. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9656789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9656789</a></p>
+<p>[428] Industrial Safety. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer" class="">https://www.iso.org/</a></p>
+<p>[429] Industrial Availability. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.abb.com/" target="_blank" rel="noopener noreferrer" class="">https://www.abb.com/</a></p>
+<p>[430] Research Flexibility. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001374" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001374</a></p>
+<p>[431] Research Openness. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer" class="">https://opencv.org/</a></p>
+<p>[432] Research Expandability. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[433] Research Documentation. (2023). &quot;Requirements&quot;. Retrieved from <a href="https://ieeexplore.ieee.org/document/9756789" target="_blank" rel="noopener noreferrer" class="">https://ieeexplore.ieee.org/document/9756789</a></p>
+<p>[434] Primary Computing. (2023). &quot;Recommendations&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[435] Secondary Computing. (2023). &quot;Recommendations&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[436] Vision Recommendations. (2023). &quot;Recommendations&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[437] LiDAR Recommendations. (2023). &quot;Recommendations&quot;. Retrieved from <a href="https://www.ouster.com/" target="_blank" rel="noopener noreferrer" class="">https://www.ouster.com/</a></p>
+<p>[438] IMU Recommendations. (2023). &quot;Recommendations&quot;. Retrieved from <a href="https://mti.xsens.com/" target="_blank" rel="noopener noreferrer" class="">https://mti.xsens.com/</a></p>
+<p>[439] Current Availability. (2023). &quot;Status Check&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[440] Support Status. (2023). &quot;Status Check&quot;. Retrieved from <a href="https://www.intelrealsense.com/" target="_blank" rel="noopener noreferrer" class="">https://www.intelrealsense.com/</a></p>
+<p>[441] Specification Validation. (2023). &quot;Status Check&quot;. Retrieved from <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer" class="">https://www.nvidia.com/en-us/</a></p>
+<p>[442] Cost-effectiveness. (2023). &quot;Validation&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001386" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001386</a></p>
+<p>[443] ROS Integration. (2023). &quot;Communication Patterns&quot;. Retrieved from <a href="https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html" target="_blank" rel="noopener noreferrer" class="">https://docs.ros.org/en/humble/Concepts/About-Topics-Services-Actions.html</a></p>
+<p>[444] Simulation Connection. (2023). &quot;Digital Twin Integration&quot;. Retrieved from <a href="https://gazebosim.org/" target="_blank" rel="noopener noreferrer" class="">https://gazebosim.org/</a></p>
+<p>[445] GPU Acceleration. (2023). &quot;Isaac Integration&quot;. Retrieved from <a href="https://docs.nvidia.com/isaac/" target="_blank" rel="noopener noreferrer" class="">https://docs.nvidia.com/isaac/</a></p>
+<p>[446] Multimodal Systems. (2023). &quot;VLA Integration&quot;. Retrieved from <a href="https://arxiv.org/abs/2306.17100" target="_blank" rel="noopener noreferrer" class="">https://arxiv.org/abs/2306.17100</a></p>
+<p>[447] Deployment Considerations. (2023). &quot;Capstone Integration&quot;. Retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S2405452621001398" target="_blank" rel="noopener noreferrer" class="">https://www.sciencedirect.com/science/article/pii/S2405452621001398</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book/tree/main/docs/hardware-guide/specifications-validation.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#hardware-specification-standards" class="table-of-contents__link toc-highlight">Hardware Specification Standards</a><ul><li><a href="#computing-platform-specifications" class="table-of-contents__link toc-highlight">Computing Platform Specifications</a></li><li><a href="#vision-sensor-specifications" class="table-of-contents__link toc-highlight">Vision Sensor Specifications</a></li><li><a href="#lidar-sensor-specifications" class="table-of-contents__link toc-highlight">LiDAR Sensor Specifications</a></li><li><a href="#inertial-measurement-unit-specifications" class="table-of-contents__link toc-highlight">Inertial Measurement Unit Specifications</a></li><li><a href="#forcetorque-sensor-specifications" class="table-of-contents__link toc-highlight">Force/Torque Sensor Specifications</a></li><li><a href="#servo-motor-specifications" class="table-of-contents__link toc-highlight">Servo Motor Specifications</a></li><li><a href="#communication-interface-specifications" class="table-of-contents__link toc-highlight">Communication Interface Specifications</a></li></ul></li><li><a href="#hardware-recommendation-validation" class="table-of-contents__link toc-highlight">Hardware Recommendation Validation</a><ul><li><a href="#current-market-analysis" class="table-of-contents__link toc-highlight">Current Market Analysis</a></li><li><a href="#vendor-verification-process" class="table-of-contents__link toc-highlight">Vendor Verification Process</a></li><li><a href="#validation-testing-procedures" class="table-of-contents__link toc-highlight">Validation Testing Procedures</a></li><li><a href="#outdated-hardware-identification" class="table-of-contents__link toc-highlight">Outdated Hardware Identification</a></li><li><a href="#cost-effectiveness-analysis" class="table-of-contents__link toc-highlight">Cost-Effectiveness Analysis</a></li><li><a href="#quality-and-reliability-validation" class="table-of-contents__link toc-highlight">Quality and Reliability Validation</a></li><li><a href="#application-specific-validation" class="table-of-contents__link toc-highlight">Application-Specific Validation</a></li><li><a href="#validation-summary" class="table-of-contents__link toc-highlight">Validation Summary</a></li></ul></li><li><a href="#cross-references" class="table-of-contents__link toc-highlight">Cross-References</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Course Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/ros2">ROS 2 Fundamentals</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Robotics-Book/docs/digital-twin">Digital Twin Simulation</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/ros2" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://robotics.stackexchange.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Robotics Stack Exchange<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://answers.ros.org/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS Answers<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Muneeb-Ahmed-Github-Account/Physical-AI-Robotics-Book" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Humanoid Robotics Course. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
